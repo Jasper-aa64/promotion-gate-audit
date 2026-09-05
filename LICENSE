@@ -1,0 +1,90 @@
+# File-specific licensing
+
+Copyright (c) 2026 Junming Liang, except where otherwise indicated.
+
+This is a mixed-license research repository, not a repository-wide MIT or
+CC BY grant. The following exact repository-relative paths define the scope.
+The permissions below apply to the author-owned material in the listed files.
+They do not grant rights in third-party works cited or referenced by them.
+
+## Software: MIT
+
+The following source files are licensed under the MIT License reproduced in
+LICENSE-CODE.txt:
+
+- `paper_numbers/reproduce.py`
+- `paper_numbers/figures.py`
+- `v2_fmt_public_formal_experiment/publication_v2/frozen_judge_v1.py`
+- `v2_fmt_public_formal_experiment/publication_v2/recompute_public.py`
+
+## Experimental data and machine-readable evidence: CC BY 4.0
+
+The following files are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0), whose unmodified legal text is in LICENSE-DATA.txt
+and at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+- `v2_fmt_public_formal_experiment/publication_v2/artifact_inventory.json`
+- `v2_fmt_public_formal_experiment/publication_v2/candidate_evidence.jsonl`
+- `v2_fmt_public_formal_experiment/publication_v2/execution_custody.json`
+- `v2_fmt_public_formal_experiment/publication_v2/independent_recompute.json`
+- `v2_fmt_public_formal_experiment/publication_v2/judge_differential_cases.json`
+- `v2_fmt_public_formal_experiment/publication_v2/judge_equivalence.json`
+- `v2_fmt_public_formal_experiment/publication_v2/publication_scan.json`
+- `v2_fmt_public_formal_experiment/publication_v2/study_binding.json`
+
+Attribution: Junming Liang, *Selective Authorization of Automated Performance
+Patches: Rule Audit and Case Study of a Frozen Promotion Gate*, 2026.
+Source: https://github.com/Jasper-aa64/promotion-gate-audit
+When sharing, retain the applicable attribution and license notices and
+indicate modifications as required by CC BY 4.0. No additional restrictions
+are imposed by this notice. Facts or other material not subject to applicable
+rights do not acquire new restrictions merely by being listed here.
+
+## Manuscript, figures, narrative documentation and other files
+
+All rights reserved for the following files; no MIT or CC BY license is
+granted to them by this repository:
+
+- `.gitattributes`
+- `.gitignore`
+- `README.md`
+- `paper_numbers/fig1_signing_lower_bound.pdf`
+- `paper_numbers/fig2_stage_level_ci_crossing.pdf`
+- `paper_numbers/fig3_binary_hash_contrast.pdf`
+- `paper_v01.pdf`
+- `paper_v01/source/main.tex`
+- `paper_v01/source/references.bib`
+- `v2_fmt_public_formal_experiment/publication_v2/README.md`
+- `v2_fmt_public_formal_experiment/publication_v2/external_consumer_acceptance.md`
+- `v2_fmt_public_formal_experiment/publication_v2/method_result_report.md`
+
+This reservation also covers generated manuscript bibliography files such as
+main.bbl, manuscript/source bundles, and copies of the paper PDF attached to
+releases. It includes the root README.md and the narrative Markdown files in
+publication_v2, even when they reproduce results also present in licensed data.
+
+The three committed figure PDFs are reserved manuscript assets. The separate
+figures.py program is MIT-licensed and can be run, studied or modified under
+MIT; it can reproduce equivalent plots. Its MIT license does not itself
+license the separate committed PDF assets. This statement does not enlarge
+copyright in facts, plotted numerical results, or otherwise unprotected
+material, or restrict permissions already granted for code or data.
+
+Any author-created file not expressly listed in an open-license section is
+reserved unless it carries a separate explicit license. The standard license
+texts themselves retain their own status and are not made proprietary by
+this scope notice. Statutory exceptions, GitHub platform rights, and any
+separately granted permissions are unaffected.
+
+## Frozen artifact integrity
+
+Licenses and this scope notice are intentionally located at repository root.
+No license headers or additional files have been inserted into publication_v2;
+its exact inventory, checksums, code and data remain unchanged.
+
+## arXiv distribution
+
+The author has selected the arXiv perpetual, non-exclusive distribution license
+for the planned arXiv submission. This is separate from the code/data licenses
+above and is not a CC BY grant for the manuscript. It does not indicate that
+arXiv has received, accepted or announced the submission.

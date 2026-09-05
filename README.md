@@ -119,3 +119,13 @@ the paper.
 
 Technical report, not peer reviewed. Corrections and replication attempts are
 welcome via issues.
+
+## Licensing
+
+This repository uses file-specific licenses; see [LICENSE](LICENSE) for the
+complete scope. The four reproduction/judge Python scripts are MIT-licensed,
+and the listed JSON/JSONL evidence files are CC BY 4.0. The paper, bibliography,
+README files, narrative reports and three committed figure PDFs remain all
+rights reserved. The figure-generation code is MIT even though the separate
+committed figure PDFs are reserved. These notices do not alter any bytes in
+the frozen public artifact.
