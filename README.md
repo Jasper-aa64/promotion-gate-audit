@@ -107,8 +107,8 @@ See `publication_v2/README.md` for its own manifest.
 ## Provenance
 
 AI coding assistants supported repository implementation, evidence checking,
-and manuscript drafting. The public package does not retain candidate-by-
-candidate model attribution, so this report does not claim that every fmt
+and manuscript drafting. The public package does not retain
+candidate-by-candidate model attribution, so this report does not claim that every fmt
 candidate was agent-generated. The author defined and froze the protocol,
 authorized execution, interpreted the evidence, and is responsible for every
 claim. No model-generated number is treated as evidence — values were accepted
