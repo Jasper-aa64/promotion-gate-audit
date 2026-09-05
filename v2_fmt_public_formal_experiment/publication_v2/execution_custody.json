@@ -1,0 +1,69 @@
+{
+  "formal_attempt_used": 2,
+  "postprocess_recovery": {
+    "authorized_runner_sha256": "43902a6eccf9921dc61043e6d6bec33d5d526a4f4a85fdbeb0028a354c55e289",
+    "ledger_sha256": "f1599ac0af4fced42f0cee08a42d89f96a01211a49a0a062fa3a4979d4326afc",
+    "measurement_rows_modified": false,
+    "original_stderr_sha256": "011a615ecf9d5578cb7254270fce24ea59a4916b7f0fb935823331689348571f",
+    "status": "DERIVED_ARTIFACTS_RECOVERED",
+    "summary_sha256": "3d15f646268d7658bf1286534d536dc3ae40d818930497ab0f7922df8e49f446"
+  },
+  "schema": "fmt_public_execution_custody_v1",
+  "weather_preflights": [
+    {
+      "active_runner_count": 0,
+      "attempt": 1,
+      "binary_sha256": "6e50bccc4189c8aaad215c263521b44df60cb9477123ba21832d9345e59312c9",
+      "compile_command_sha256": "5a04ceee435d77f7db8dc0b7aa709dc5de55dbd51a88c5ab9de37cbe114d26db",
+      "control_samples_ms": [
+        620.796341,
+        835.982815,
+        725.785557,
+        651.53388,
+        623.776648
+      ],
+      "control_stats": {
+        "control_cov": 0.13990108345249566,
+        "control_mean_ms": 691.5750482,
+        "control_median_ms": 651.53388,
+        "control_range_ms": 215.18647399999998,
+        "control_range_ratio": 0.33027672175697137,
+        "control_stdev_ms": 91.15029571800828,
+        "sample_count": 5
+      },
+      "decision": "NOISY",
+      "reasons": [
+        "control_cov_above_noisy_threshold:0.139901",
+        "control_range_ratio_above_noisy_threshold:0.330277"
+      ],
+      "recorded_at": "2026-08-14T06:48:40Z"
+    },
+    {
+      "active_runner_count": 0,
+      "attempt": 2,
+      "binary_sha256": "6e50bccc4189c8aaad215c263521b44df60cb9477123ba21832d9345e59312c9",
+      "compile_command_sha256": "7107408f85c03174a5f275b0e5c7e8ab336f7c14f93d4b807136984cc9c427ff",
+      "control_samples_ms": [
+        547.874896,
+        554.062586,
+        557.811157,
+        542.364919,
+        545.360991
+      ],
+      "control_stats": {
+        "control_cov": 0.011564487579181859,
+        "control_mean_ms": 549.4949098,
+        "control_median_ms": 547.874896,
+        "control_range_ms": 15.446237999999994,
+        "control_range_ratio": 0.02819300192940396,
+        "control_stdev_ms": 6.335892429737553,
+        "sample_count": 5
+      },
+      "decision": "QUIET",
+      "reasons": [
+        "host_snapshot_and_control_jitter_within_quiet_thresholds"
+      ],
+      "recorded_at": "2026-08-14T08:08:41Z"
+    }
+  ]
+}

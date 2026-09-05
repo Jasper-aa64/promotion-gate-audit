@@ -1,0 +1,90 @@
+{
+  "authorization_sha256": "801f6d854d398769ed47cdacf475a52dc43e2044ce37b72b8fbb947d8ce6ab52",
+  "authorized_runner_sha256": "43902a6eccf9921dc61043e6d6bec33d5d526a4f4a85fdbeb0028a354c55e289",
+  "authorized_timing_judge_sha256": "cc0c888779cf771cc9c31b8e7021b084d83061256ae7bf67ed4f3dbf334f4944",
+  "calibration_control_median_ms": 532.686272,
+  "calibration_manifest_sha256": "3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f",
+  "candidate_evidence_schema": "fmt_public_candidate_evidence_v2",
+  "final_manifest_sha256": "3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f",
+  "frozen_ledger_sha256": "f1599ac0af4fced42f0cee08a42d89f96a01211a49a0a062fa3a4979d4326afc",
+  "judge": "paired_bootstrap_permutation_v1",
+  "line_ending_treatment": {
+    "v1_binding_hash_basis": "LF in-memory text; differs from the committed CRLF bytes",
+    "v1_custody_line_endings": "CRLF",
+    "v1_custody_preserved": "byte-identical; this v2 package is a separate derived representation",
+    "v2_binding_hash_basis": "actual committed bytes",
+    "v2_package_line_endings": "LF"
+  },
+  "operation_count": 1024000,
+  "public_frozen_judge_sha256": "5b44592b444dec820c5492f17d48ca4c6fa923e4a7089154b541c0e55eca7c7b",
+  "public_recompute_sha256": "82238f6f3ed5ae30fc9a231cd118e64c58dec0e073cd1ee5fae29d37f4d78f91",
+  "real_candidate_id": "fmt_buffer_reuse",
+  "run_order_seed": "d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd",
+  "schema": "fmt_public_formal_binding_v2",
+  "source_commit": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f",
+  "strict_null_denominator": 30,
+  "study_id": "fmt-public-preregistration-v1",
+  "target": "fmt 12.1.0",
+  "type_conversion": {
+    "boolean_fields": [
+      "correctness_pass",
+      "naive_k1_would_accept",
+      "null_far_denominator_eligible"
+    ],
+    "empty_string_to_null": true,
+    "integer_fields": [
+      "candidate_sample_count",
+      "control_sample_count",
+      "paired_sample_count"
+    ],
+    "list_integer_fields": [
+      "sample_depths_attempted"
+    ],
+    "number_fields": [
+      "bootstrap_ci_high_ms",
+      "bootstrap_ci_low_ms",
+      "confidence_ci_width_ms",
+      "confidence_decisiveness",
+      "confidence_margin_ms",
+      "confidence_sign_consistency",
+      "control_median_ms",
+      "decisive_k",
+      "delta_min_ms_used",
+      "mde_ms",
+      "median_delta_ms",
+      "naive_k1_first_delta_ms",
+      "paired_mean_ms",
+      "paired_range_ms",
+      "paired_stdev_ms",
+      "permutation_p_value",
+      "power_at_observed_effect",
+      "sign_min"
+    ],
+    "recorded_at_note": "recorded_at stays an ISO-8601 string (microsecond-precision lossless projection); elapsed-time and statistics fields are native JSON numbers",
+    "source_schema": "fmt_formal_terminal_candidate_v1",
+    "string_fields": [
+      "authorization_sha256",
+      "candidate_id",
+      "candidate_samples_ms",
+      "change_class",
+      "confidence_tier",
+      "control_samples_ms",
+      "escalation_steps",
+      "evidence_path",
+      "final_manifest_sha256",
+      "host_weather",
+      "noise_flag",
+      "oracle_label",
+      "outcome_taxonomy",
+      "paired_deltas_ms",
+      "raw_verdict",
+      "recorded_at",
+      "verdict"
+    ],
+    "target_schema": "fmt_public_candidate_evidence_v2"
+  },
+  "upstream_repository": "https://github.com/fmtlib/fmt",
+  "v1_custody_binding_candidate_evidence_sha256": "d85662ee00ead3b6686fc53cb2fe722847f2407f0370271bc4c0e61f2af1dd06",
+  "v1_custody_jsonl_sha256": "6c023a0e22fb4a2346b25ddf3b95dce6446e0fa743fcb654a1dd2bcdf815d9e2",
+  "v2_typed_jsonl_sha256": "87600d32715e39b9da165293e3c4943140829aad026e6609625210771992ee09"
+}

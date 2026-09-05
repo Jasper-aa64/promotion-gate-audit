@@ -1,0 +1,4633 @@
+{
+  "case_count": 64,
+  "cases": [
+    {
+      "case_id": "judge-differential-000",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "14.720",
+        "bootstrap_ci_low_ms": "0.095",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "542.367,541.906,541.436,540.89",
+        "confidence_ci_width_ms": "14.625",
+        "confidence_decisiveness": "-0.1812",
+        "confidence_margin_ms": "-2.650",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.078",
+        "control_sample_count": "4",
+        "control_samples_ms": "557.046,542.001,556.156,541.746",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.745",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "14.257",
+        "median_delta_ms": "7.768",
+        "naive_k1_first_delta_ms": "14.679",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "14.6788,0.0949541,14.7199,0.85621",
+        "paired_mean_ms": "7.587",
+        "paired_range_ms": "14.625",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "8.218",
+        "permutation_p_value": "0.130435",
+        "power_at_observed_effect": "0.2303",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 542.3671479022494,
+          "control_ms": 557.0459719168437
+        },
+        {
+          "candidate_ms": 541.9063086850996,
+          "control_ms": 542.001262760014
+        },
+        {
+          "candidate_ms": 541.4356518739522,
+          "control_ms": 556.1555842531053
+        },
+        {
+          "candidate_ms": 540.8900785634496,
+          "control_ms": 541.7462890032981
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-000\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-001",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-3.632",
+        "bootstrap_ci_low_ms": "-12.841",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "556.645,557.698,561.067,559.163",
+        "confidence_ci_width_ms": "9.209",
+        "confidence_decisiveness": "-1.6942",
+        "confidence_margin_ms": "-15.602",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "552.049",
+        "control_sample_count": "4",
+        "control_samples_ms": "551.64,552.457,548.226,555.531",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.760",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.599",
+        "median_delta_ms": "-5.123",
+        "naive_k1_first_delta_ms": "-5.005",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-5.00512,-5.2408,-12.8414,-3.63232",
+        "paired_mean_ms": "-6.680",
+        "paired_range_ms": "9.209",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "4.168",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 556.6453390327545,
+          "control_ms": 551.640222384415
+        },
+        {
+          "candidate_ms": 557.697687619108,
+          "control_ms": 552.4568903746449
+        },
+        {
+          "candidate_ms": 561.0672643725408,
+          "control_ms": 548.2258438803201
+        },
+        {
+          "candidate_ms": 559.1634807165893,
+          "control_ms": 555.5311564749323
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-001\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-002",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "18.713",
+        "bootstrap_ci_low_ms": "8.908",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "538.46,536.249,536.731,537.456",
+        "confidence_ci_width_ms": "9.805",
+        "confidence_decisiveness": "0.6282",
+        "confidence_margin_ms": "6.159",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.714",
+        "control_sample_count": "4",
+        "control_samples_ms": "547.368,549.667,549.76,556.169",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.749",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.380",
+        "median_delta_ms": "13.224",
+        "naive_k1_first_delta_ms": "8.908",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "8.90795,13.4183,13.0291,18.7133",
+        "paired_mean_ms": "13.517",
+        "paired_range_ms": "9.805",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "4.020",
+        "permutation_p_value": "0.126937",
+        "power_at_observed_effect": "0.9994",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 538.4596929936291,
+          "control_ms": 547.3676472104461
+        },
+        {
+          "candidate_ms": 536.2489252207087,
+          "control_ms": 549.6672645507526
+        },
+        {
+          "candidate_ms": 536.7313328456811,
+          "control_ms": 549.7604627669813
+        },
+        {
+          "candidate_ms": 537.4559514177819,
+          "control_ms": 556.1692970310077
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-002\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-003",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-9.001",
+        "bootstrap_ci_low_ms": "-22.505",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "565.276,568.995,565.709,565.381",
+        "confidence_ci_width_ms": "13.503",
+        "confidence_decisiveness": "-1.8704",
+        "confidence_margin_ms": "-25.257",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "550.493",
+        "control_sample_count": "4",
+        "control_samples_ms": "552.655,546.491,556.708,548.33",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.752",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "10.914",
+        "median_delta_ms": "-14.836",
+        "naive_k1_first_delta_ms": "-12.620",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-12.6205,-22.5046,-9.00115,-17.0511",
+        "paired_mean_ms": "-15.294",
+        "paired_range_ms": "13.503",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "5.826",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 565.2759361542933,
+          "control_ms": 552.6554694815811
+        },
+        {
+          "candidate_ms": 568.9953644844616,
+          "control_ms": 546.4907333968378
+        },
+        {
+          "candidate_ms": 565.7088985487342,
+          "control_ms": 556.7077476121931
+        },
+        {
+          "candidate_ms": 565.3806705347307,
+          "control_ms": 548.3295918789645
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-003\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-004",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "26.856",
+        "bootstrap_ci_low_ms": "-5.148",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "546.679,537.633,556.572,551.093",
+        "confidence_ci_width_ms": "32.005",
+        "confidence_decisiveness": "-0.2467",
+        "confidence_margin_ms": "-7.897",
+        "confidence_sign_consistency": "0.5000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.718",
+        "control_sample_count": "4",
+        "control_samples_ms": "543.688,548.014,551.423,577.95",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.749",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "23.412",
+        "median_delta_ms": "3.695",
+        "naive_k1_first_delta_ms": "-2.991",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-2.9909,10.3806,-5.1484,26.8563",
+        "paired_mean_ms": "7.274",
+        "paired_range_ms": "32.005",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "14.751",
+        "permutation_p_value": "0.372814",
+        "power_at_observed_effect": "0.0335",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 546.6792801874183,
+          "control_ms": 543.688376025783
+        },
+        {
+          "candidate_ms": 537.6330506612433,
+          "control_ms": 548.0136339948273
+        },
+        {
+          "candidate_ms": 556.5716733361504,
+          "control_ms": 551.4232780050788
+        },
+        {
+          "candidate_ms": 551.0932517175436,
+          "control_ms": 577.9495784885833
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-004\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-005",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "6.466",
+        "bootstrap_ci_low_ms": "-48.602",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "572.852,556.518,557.944,581.26",
+        "confidence_ci_width_ms": "55.068",
+        "confidence_decisiveness": "-0.9324",
+        "confidence_margin_ms": "-51.344",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "548.276",
+        "control_sample_count": "4",
+        "control_samples_ms": "567.223,562.984,533.567,532.658",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.741",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "36.368",
+        "median_delta_ms": "-15.003",
+        "naive_k1_first_delta_ms": "-5.629",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-5.62905,6.46622,-24.377,-48.6022",
+        "paired_mean_ms": "-18.036",
+        "paired_range_ms": "55.068",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "24.005",
+        "permutation_p_value": "0.888556",
+        "power_at_observed_effect": "0.0003",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 572.8522034366194,
+          "control_ms": 567.2231545826895
+        },
+        {
+          "candidate_ms": 556.5181881450977,
+          "control_ms": 562.9844110793666
+        },
+        {
+          "candidate_ms": 557.9441993948132,
+          "control_ms": 533.5671743076246
+        },
+        {
+          "candidate_ms": 581.2597371727541,
+          "control_ms": 532.6575845814018
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-005\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-006",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "20.222",
+        "bootstrap_ci_low_ms": "-17.738",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "542.965,535.609,533.472,504.274",
+        "confidence_ci_width_ms": "37.960",
+        "confidence_decisiveness": "-0.5376",
+        "confidence_margin_ms": "-20.405",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "533.485",
+        "control_sample_count": "4",
+        "control_samples_ms": "563.187,551.235,515.734,515.541",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.667",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "26.644",
+        "median_delta_ms": "13.446",
+        "naive_k1_first_delta_ms": "20.222",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "20.2219,15.626,-17.738,11.2662",
+        "paired_mean_ms": "7.344",
+        "paired_range_ms": "37.960",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "17.116",
+        "permutation_p_value": "0.324338",
+        "power_at_observed_effect": "0.2418",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 542.9646057452586,
+          "control_ms": 563.1865424990131
+        },
+        {
+          "candidate_ms": 535.6094606158587,
+          "control_ms": 551.235415234301
+        },
+        {
+          "candidate_ms": 533.4717480395158,
+          "control_ms": 515.733726884117
+        },
+        {
+          "candidate_ms": 504.274469249017,
+          "control_ms": 515.5406649015426
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-006\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-007",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-2.501",
+        "bootstrap_ci_low_ms": "-14.907",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "542.121,552.615,586.322,562.705",
+        "confidence_ci_width_ms": "12.406",
+        "confidence_decisiveness": "-1.4212",
+        "confidence_margin_ms": "-17.632",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "544.909",
+        "control_sample_count": "4",
+        "control_samples_ms": "539.296,537.708,583.821,550.522",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.725",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "11.664",
+        "median_delta_ms": "-7.504",
+        "naive_k1_first_delta_ms": "-2.825",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-2.82474,-14.9071,-2.50078,-12.1828",
+        "paired_mean_ms": "-8.104",
+        "paired_range_ms": "12.406",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "6.382",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 542.1206323380684,
+          "control_ms": 539.2958961900655
+        },
+        {
+          "candidate_ms": 552.615349215453,
+          "control_ms": 537.7082045385922
+        },
+        {
+          "candidate_ms": 586.3215482349021,
+          "control_ms": 583.8207654731708
+        },
+        {
+          "candidate_ms": 562.7051217577667,
+          "control_ms": 550.5223347818635
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-007\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-008",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "18.372",
+        "bootstrap_ci_low_ms": "4.637",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "538.189,538.685,540.411,539.232,538.584,538.03,538.369,539.113",
+        "confidence_ci_width_ms": "13.735",
+        "confidence_decisiveness": "0.1370",
+        "confidence_margin_ms": "1.882",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "551.181",
+        "control_sample_count": "8",
+        "control_samples_ms": "556.562,542.46,558.77,548.331,557.21,542.668,549.93,552.431",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.756",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.755",
+        "median_delta_ms": "12.440",
+        "naive_k1_first_delta_ms": "18.372",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "18.3724,3.77509,18.3587,9.09993,18.6264,4.6375,11.5611,13.3179",
+        "paired_mean_ms": "12.219",
+        "paired_range_ms": "14.851",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "6.056",
+        "permutation_p_value": "0.036482",
+        "power_at_observed_effect": "0.9948",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 538.189253628267,
+          "control_ms": 556.5616991351664
+        },
+        {
+          "candidate_ms": 538.6851521167952,
+          "control_ms": 542.460240926366
+        },
+        {
+          "candidate_ms": 540.4109919563131,
+          "control_ms": 558.7697418845258
+        },
+        {
+          "candidate_ms": 539.2315538048312,
+          "control_ms": 548.331482948167
+        },
+        {
+          "candidate_ms": 538.5838379667931,
+          "control_ms": 557.2102313262528
+        },
+        {
+          "candidate_ms": 538.0302393839692,
+          "control_ms": 542.6677377265345
+        },
+        {
+          "candidate_ms": 538.3686738562528,
+          "control_ms": 549.9297786219649
+        },
+        {
+          "candidate_ms": 539.1133361634465,
+          "control_ms": 552.431272566049
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-008\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-009",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-7.221",
+        "bootstrap_ci_low_ms": "-16.701",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "558.457,557.63,558.861,557.347,557.126,559.304,558.825,559.057",
+        "confidence_ci_width_ms": "9.479",
+        "confidence_decisiveness": "-2.0506",
+        "confidence_margin_ms": "-19.438",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "547.483",
+        "control_sample_count": "8",
+        "control_samples_ms": "534.681,549.833,552.215,545.133,544.754,550.823,556.385,542.357",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.737",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "9.299",
+        "median_delta_ms": "-10.348",
+        "naive_k1_first_delta_ms": "-23.777",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-23.7769,-7.79719,-6.64577,-12.214,-12.3719,-8.48179,-2.43989,-16.7005",
+        "paired_mean_ms": "-11.303",
+        "paired_range_ms": "21.337",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "6.625",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 558.4574169656775,
+          "control_ms": 534.6805303920486
+        },
+        {
+          "candidate_ms": 557.6301937912954,
+          "control_ms": 549.8330051831532
+        },
+        {
+          "candidate_ms": 558.861240969386,
+          "control_ms": 552.2154743887507
+        },
+        {
+          "candidate_ms": 557.3468483799702,
+          "control_ms": 545.1328972080532
+        },
+        {
+          "candidate_ms": 557.1258790701652,
+          "control_ms": 544.7539765653427
+        },
+        {
+          "candidate_ms": 559.3044636891173,
+          "control_ms": 550.8226751385853
+        },
+        {
+          "candidate_ms": 558.8246063937034,
+          "control_ms": 556.3847181432493
+        },
+        {
+          "candidate_ms": 559.0573053771989,
+          "control_ms": 542.3568024295671
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-009\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-010",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "22.668",
+        "bootstrap_ci_low_ms": "10.840",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "534.769,531.787,535.366,537.172,533.094,534.506,538.854,538.02",
+        "confidence_ci_width_ms": "11.828",
+        "confidence_decisiveness": "0.6836",
+        "confidence_margin_ms": "8.086",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "550.817",
+        "control_sample_count": "8",
+        "control_samples_ms": "545.609,563.166,549.087,549.077,555.762,539.342,555.249,552.547",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.754",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "10.750",
+        "median_delta_ms": "14.124",
+        "naive_k1_first_delta_ms": "10.840",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "10.8398,31.3793,13.7208,11.9051,22.6679,4.83598,16.395,14.5276",
+        "paired_mean_ms": "15.784",
+        "paired_range_ms": "26.543",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "8.073",
+        "permutation_p_value": "0.028986",
+        "power_at_observed_effect": "0.9785",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 534.7693237679807,
+          "control_ms": 545.6090803610134
+        },
+        {
+          "candidate_ms": 531.7866665216111,
+          "control_ms": 563.1660063500076
+        },
+        {
+          "candidate_ms": 535.3660579621583,
+          "control_ms": 549.086845312188
+        },
+        {
+          "candidate_ms": 537.1721932643601,
+          "control_ms": 549.0773358764038
+        },
+        {
+          "candidate_ms": 533.0938914680601,
+          "control_ms": 555.7618016742039
+        },
+        {
+          "candidate_ms": 534.5056991486833,
+          "control_ms": 539.3416826236178
+        },
+        {
+          "candidate_ms": 538.8543093223468,
+          "control_ms": 555.249270054926
+        },
+        {
+          "candidate_ms": 538.0198637717698,
+          "control_ms": 552.5474310115094
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-010\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-011",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "3.243",
+        "bootstrap_ci_low_ms": "-17.652",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "560.284,558.871,555.953,557.587,551.273,558.507,555.521,557.81",
+        "confidence_ci_width_ms": "20.895",
+        "confidence_decisiveness": "-0.9759",
+        "confidence_margin_ms": "-20.391",
+        "confidence_sign_consistency": "0.6250",
+        "confidence_tier": "weak",
+        "control_median_ms": "547.767",
+        "control_sample_count": "8",
+        "control_samples_ms": "538.245,562.114,541.325,543.699,533.621,551.835,559.849,560.955",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.739",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "13.149",
+        "median_delta_ms": "-10.280",
+        "naive_k1_first_delta_ms": "-22.039",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-22.039,3.24313,-14.628,-13.8881,-17.6523,-6.67228,4.32773,3.14536",
+        "paired_mean_ms": "-8.020",
+        "paired_range_ms": "26.367",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "10.510",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 560.2837959524602,
+          "control_ms": 538.2447832597685
+        },
+        {
+          "candidate_ms": 558.8710085177538,
+          "control_ms": 562.1141400597585
+        },
+        {
+          "candidate_ms": 555.9533425828259,
+          "control_ms": 541.3253466239836
+        },
+        {
+          "candidate_ms": 557.5872908091006,
+          "control_ms": 543.6991415368145
+        },
+        {
+          "candidate_ms": 551.273032810369,
+          "control_ms": 533.6207233023191
+        },
+        {
+          "candidate_ms": 558.5070026012786,
+          "control_ms": 551.8347243323378
+        },
+        {
+          "candidate_ms": 555.520788315034,
+          "control_ms": 559.8485140278434
+        },
+        {
+          "candidate_ms": 557.8095146914593,
+          "control_ms": 560.9548724772656
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-011\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-012",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "20.825",
+        "bootstrap_ci_low_ms": "-7.682",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "552.502,529.433,557.242,538.654,543.143,551.157,560.755,535.002",
+        "confidence_ci_width_ms": "28.507",
+        "confidence_decisiveness": "-0.3659",
+        "confidence_margin_ms": "-10.431",
+        "confidence_sign_consistency": "0.5000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.897",
+        "control_sample_count": "8",
+        "control_samples_ms": "544.82,552.767,534.898,550.369,548.285,549.424,558.06,555.827",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.749",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "17.828",
+        "median_delta_ms": "1.705",
+        "naive_k1_first_delta_ms": "-7.682",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-7.68192,23.3347,-22.3442,11.7147,5.14202,-1.7326,-2.69492,20.8246",
+        "paired_mean_ms": "3.320",
+        "paired_range_ms": "45.679",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "15.223",
+        "permutation_p_value": "0.431284",
+        "power_at_observed_effect": "0.0156",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 552.5018825798944,
+          "control_ms": 544.8199578836355
+        },
+        {
+          "candidate_ms": 529.4327984072975,
+          "control_ms": 552.7674685996914
+        },
+        {
+          "candidate_ms": 557.2419725008281,
+          "control_ms": 534.8977606458421
+        },
+        {
+          "candidate_ms": 538.6543152544538,
+          "control_ms": 550.3690358718851
+        },
+        {
+          "candidate_ms": 543.142741946656,
+          "control_ms": 548.2847600302463
+        },
+        {
+          "candidate_ms": 551.1568067425193,
+          "control_ms": 549.424210391674
+        },
+        {
+          "candidate_ms": 560.7549648606805,
+          "control_ms": 558.0600421336549
+        },
+        {
+          "candidate_ms": 535.002488607392,
+          "control_ms": 555.8270933405078
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-012\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-013",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "14.602",
+        "bootstrap_ci_low_ms": "-28.366",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "555.022,576.098,549.09,554.438,558.755,550.785,544.312,559.218",
+        "confidence_ci_width_ms": "42.968",
+        "confidence_decisiveness": "-0.7247",
+        "confidence_margin_ms": "-31.139",
+        "confidence_sign_consistency": "0.6250",
+        "confidence_tier": "weak",
+        "control_median_ms": "554.570",
+        "control_sample_count": "8",
+        "control_samples_ms": "555.237,547.732,565.947,555.675,547.325,553.904,558.914,527.211",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.773",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "20.760",
+        "median_delta_ms": "0.725",
+        "naive_k1_first_delta_ms": "0.214",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "0.214461,-28.3661,16.8569,1.23623,-11.4301,3.11874,14.602,-32.0069",
+        "paired_mean_ms": "-4.472",
+        "paired_range_ms": "48.864",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "18.160",
+        "permutation_p_value": "0.420290",
+        "power_at_observed_effect": "0.0113",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 555.0221866163812,
+          "control_ms": 555.2366473804753
+        },
+        {
+          "candidate_ms": 576.0977417316274,
+          "control_ms": 547.7316392580075
+        },
+        {
+          "candidate_ms": 549.0898849354587,
+          "control_ms": 565.9468287652822
+        },
+        {
+          "candidate_ms": 554.4383803564996,
+          "control_ms": 555.6746082604712
+        },
+        {
+          "candidate_ms": 558.7552947454773,
+          "control_ms": 547.3251655525381
+        },
+        {
+          "candidate_ms": 550.785047163664,
+          "control_ms": 553.9037908141736
+        },
+        {
+          "candidate_ms": 544.3120691942705,
+          "control_ms": 558.9141150287636
+        },
+        {
+          "candidate_ms": 559.2183619889598,
+          "control_ms": 527.2114139440273
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-013\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-014",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "53.191",
+        "bootstrap_ci_low_ms": "-26.458",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "587.692,507.415,581.46,530.674,547.31,541.446,474.227,505.369",
+        "confidence_ci_width_ms": "79.649",
+        "confidence_decisiveness": "-0.3665",
+        "confidence_margin_ms": "-29.188",
+        "confidence_sign_consistency": "0.6250",
+        "confidence_tier": "weak",
+        "control_median_ms": "546.115",
+        "control_sample_count": "8",
+        "control_samples_ms": "522.32,539.97,555.002,541.181,551.215,531.293,551.05,558.56",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.731",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "47.484",
+        "median_delta_ms": "7.206",
+        "naive_k1_first_delta_ms": "-65.372",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-65.3724,32.555,-26.4577,10.5072,3.90546,-10.1534,76.8228,53.1915",
+        "paired_mean_ms": "9.375",
+        "paired_range_ms": "142.195",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "45.182",
+        "permutation_p_value": "0.306847",
+        "power_at_observed_effect": "0.0465",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 587.6921779923317,
+          "control_ms": 522.3198059812997
+        },
+        {
+          "candidate_ms": 507.41542259781846,
+          "control_ms": 539.9703981612524
+        },
+        {
+          "candidate_ms": 581.459633790472,
+          "control_ms": 555.0018911803195
+        },
+        {
+          "candidate_ms": 530.6736440314246,
+          "control_ms": 541.1808620790129
+        },
+        {
+          "candidate_ms": 547.3100229007588,
+          "control_ms": 551.2154806343627
+        },
+        {
+          "candidate_ms": 541.4459165726514,
+          "control_ms": 531.2925061278496
+        },
+        {
+          "candidate_ms": 474.2269479264393,
+          "control_ms": 551.0497421567069
+        },
+        {
+          "candidate_ms": 505.36857356791336,
+          "control_ms": 558.5600440252978
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-014\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-015",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "27.730",
+        "bootstrap_ci_low_ms": "-11.431",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "569.733,580.962,551.324,549.501,529.497,580.108,502.23,532.752",
+        "confidence_ci_width_ms": "39.162",
+        "confidence_decisiveness": "-0.3643",
+        "confidence_margin_ms": "-14.268",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "567.439",
+        "control_sample_count": "8",
+        "control_samples_ms": "580.653,569.358,569.089,577.231,555.906,546.334,565.788,548.153",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.837",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "31.249",
+        "median_delta_ms": "16.583",
+        "naive_k1_first_delta_ms": "10.920",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "10.9202,-11.6041,17.7655,27.7304,26.4088,-33.7737,63.5577,15.4013",
+        "paired_mean_ms": "14.551",
+        "paired_range_ms": "97.331",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "28.684",
+        "permutation_p_value": "0.121439",
+        "power_at_observed_effect": "0.2727",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 569.7332000553411,
+          "control_ms": 580.6534145844174
+        },
+        {
+          "candidate_ms": 580.9620851643116,
+          "control_ms": 569.3580286703888
+        },
+        {
+          "candidate_ms": 551.323582399518,
+          "control_ms": 569.0891299316656
+        },
+        {
+          "candidate_ms": 549.501054893026,
+          "control_ms": 577.2314533617108
+        },
+        {
+          "candidate_ms": 529.4967573620287,
+          "control_ms": 555.905571629097
+        },
+        {
+          "candidate_ms": 580.1076502287033,
+          "control_ms": 546.3339634110231
+        },
+        {
+          "candidate_ms": 502.2302271880215,
+          "control_ms": 565.7879661621154
+        },
+        {
+          "candidate_ms": 532.7516420231857,
+          "control_ms": 548.1529060613597
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-015\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-016",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "12.019",
+        "bootstrap_ci_low_ms": "2.228",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "542.913,545.109,544.238,543.801,541.798,543.424,544.804,542.743,544.148,545.299,544.328,543.321",
+        "confidence_ci_width_ms": "9.791",
+        "confidence_decisiveness": "-0.0548",
+        "confidence_margin_ms": "-0.537",
+        "confidence_sign_consistency": "0.8333",
+        "confidence_tier": "weak",
+        "control_median_ms": "552.852",
+        "control_sample_count": "12",
+        "control_samples_ms": "553.091,548.573,542.702,564.142,554.059,555.201,552.613,540.341,558.107,554.603,549.978,544.312",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.764",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.215",
+        "median_delta_ms": "8.557",
+        "naive_k1_first_delta_ms": "10.178",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "10.1781,3.46447,-1.53563,20.3408,12.2612,11.7765,7.80894,-2.40125,13.9592,9.30415,5.64962,0.990795",
+        "paired_mean_ms": "7.650",
+        "paired_range_ms": "22.742",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "6.739",
+        "permutation_p_value": "0.004998",
+        "power_at_observed_effect": "0.8455",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 542.912685693946,
+          "control_ms": 553.0907358570472
+        },
+        {
+          "candidate_ms": 545.1089957783798,
+          "control_ms": 548.5734686380432
+        },
+        {
+          "candidate_ms": 544.2378174706292,
+          "control_ms": 542.702192191432
+        },
+        {
+          "candidate_ms": 543.8011623129827,
+          "control_ms": 564.1419375710269
+        },
+        {
+          "candidate_ms": 541.7981587630521,
+          "control_ms": 554.0593376482971
+        },
+        {
+          "candidate_ms": 543.4244832125665,
+          "control_ms": 555.2010114661737
+        },
+        {
+          "candidate_ms": 544.8041631067016,
+          "control_ms": 552.6131028065004
+        },
+        {
+          "candidate_ms": 542.7426737588231,
+          "control_ms": 540.3414257655043
+        },
+        {
+          "candidate_ms": 544.1475496274875,
+          "control_ms": 558.1067097083506
+        },
+        {
+          "candidate_ms": 545.2991710886381,
+          "control_ms": 554.6033211468576
+        },
+        {
+          "candidate_ms": 544.3284746421702,
+          "control_ms": 549.9780943484736
+        },
+        {
+          "candidate_ms": 543.3208352133574,
+          "control_ms": 544.3116303251725
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-016\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-017",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "1.075",
+        "bootstrap_ci_low_ms": "-13.482",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "555.557,557.128,556.544,559.094,556.627,556.224,558.051,556.597,557.314,557.613,556.487,556.258",
+        "confidence_ci_width_ms": "14.557",
+        "confidence_decisiveness": "-1.1138",
+        "confidence_margin_ms": "-16.213",
+        "confidence_sign_consistency": "0.6667",
+        "confidence_tier": "weak",
+        "control_median_ms": "546.356",
+        "control_sample_count": "12",
+        "control_samples_ms": "546.284,555.349,546.429,543.738,540.959,544.617,532.587,557.987,546.135,558.374,566.381,561.578",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.732",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "10.945",
+        "median_delta_ms": "-9.694",
+        "naive_k1_first_delta_ms": "-9.273",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-9.27291,-1.77938,-10.1152,-15.3568,-15.668,-11.6064,-25.4637,1.38996,-11.1793,0.76077,9.89409,5.32053",
+        "paired_mean_ms": "-6.923",
+        "paired_range_ms": "35.358",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "10.155",
+        "permutation_p_value": "0.992004",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 555.5566454458557,
+          "control_ms": 546.2837324502487
+        },
+        {
+          "candidate_ms": 557.1281406871415,
+          "control_ms": 555.3487622074942
+        },
+        {
+          "candidate_ms": 556.544203254283,
+          "control_ms": 546.4290295816606
+        },
+        {
+          "candidate_ms": 559.0944464806703,
+          "control_ms": 543.737602794369
+        },
+        {
+          "candidate_ms": 556.6268127192955,
+          "control_ms": 540.9588567556435
+        },
+        {
+          "candidate_ms": 556.2236170446395,
+          "control_ms": 544.6171973120654
+        },
+        {
+          "candidate_ms": 558.0508277666149,
+          "control_ms": 532.5870928512768
+        },
+        {
+          "candidate_ms": 556.5968424169685,
+          "control_ms": 557.9868044172072
+        },
+        {
+          "candidate_ms": 557.3142111278388,
+          "control_ms": 546.134889105001
+        },
+        {
+          "candidate_ms": 557.6128286802691,
+          "control_ms": 558.3735985780351
+        },
+        {
+          "candidate_ms": 556.4871760972158,
+          "control_ms": 566.3812627204456
+        },
+        {
+          "candidate_ms": 556.2579114785068,
+          "control_ms": 561.5784440256008
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-017\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-018",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "23.363",
+        "bootstrap_ci_low_ms": "10.691",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "533.945,531.61,535.443,534.976,533.88,531.255,533.819,535.013,537.631,534.217,533.271,533.276",
+        "confidence_ci_width_ms": "12.672",
+        "confidence_decisiveness": "0.6249",
+        "confidence_margin_ms": "7.919",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "554.490",
+        "control_sample_count": "12",
+        "control_samples_ms": "555.63,535.033,545.257,557.541,545.207,555.417,568.65,553.982,551.866,554.998,543.327,559.135",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.772",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "9.786",
+        "median_delta_ms": "19.875",
+        "naive_k1_first_delta_ms": "21.684",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "21.6845,3.42335,9.8146,22.5648,11.3265,24.1618,34.8312,18.9688,14.2354,20.7807,10.0558,25.859",
+        "paired_mean_ms": "18.142",
+        "paired_range_ms": "31.408",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "8.672",
+        "permutation_p_value": "0.008496",
+        "power_at_observed_effect": "1.0000",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 533.9451298656122,
+          "control_ms": 555.6296000961827
+        },
+        {
+          "candidate_ms": 531.6096051474832,
+          "control_ms": 535.0329538204469
+        },
+        {
+          "candidate_ms": 535.4426271559488,
+          "control_ms": 545.2572292969799
+        },
+        {
+          "candidate_ms": 534.9763204180465,
+          "control_ms": 557.5411417111171
+        },
+        {
+          "candidate_ms": 533.8801340458518,
+          "control_ms": 545.2066155155045
+        },
+        {
+          "candidate_ms": 531.2553230620189,
+          "control_ms": 555.4171456476893
+        },
+        {
+          "candidate_ms": 533.8192514493937,
+          "control_ms": 568.6504478873952
+        },
+        {
+          "candidate_ms": 535.0127815590758,
+          "control_ms": 553.9815908412193
+        },
+        {
+          "candidate_ms": 537.6305389825719,
+          "control_ms": 551.8659718565922
+        },
+        {
+          "candidate_ms": 534.2171117549708,
+          "control_ms": 554.9978188033197
+        },
+        {
+          "candidate_ms": 533.2711680443904,
+          "control_ms": 543.3269631366664
+        },
+        {
+          "candidate_ms": 533.2756442148752,
+          "control_ms": 559.1346549840816
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-018\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-019",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "-3.038",
+        "bootstrap_ci_low_ms": "-9.783",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "560.84,558.037,559.049,560.283,560.013,556.199,557.886,555.387,556.473,558.49,556.018,558.115",
+        "confidence_ci_width_ms": "6.745",
+        "confidence_decisiveness": "-1.8605",
+        "confidence_margin_ms": "-12.548",
+        "confidence_sign_consistency": "0.8333",
+        "confidence_tier": "weak",
+        "control_median_ms": "553.172",
+        "control_sample_count": "12",
+        "control_samples_ms": "555.903,553,559.095,556.848,553.344,553.558,557.889,542.784,540.925,548.292,546.651,551.636",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.766",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "6.659",
+        "median_delta_ms": "-5.758",
+        "naive_k1_first_delta_ms": "-4.937",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-4.93714,-5.03666,0.0464084,-3.43515,-6.66921,-2.64076,0.00325468,-12.6034,-15.548,-10.198,-9.36718,-6.4791",
+        "paired_mean_ms": "-6.405",
+        "paired_range_ms": "15.594",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "4.814",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 560.8397425609974,
+          "control_ms": 555.9026000918066
+        },
+        {
+          "candidate_ms": 558.036887981771,
+          "control_ms": 553.0002315218521
+        },
+        {
+          "candidate_ms": 559.0490351561336,
+          "control_ms": 559.0954435971706
+        },
+        {
+          "candidate_ms": 560.2827238624188,
+          "control_ms": 556.8475688733597
+        },
+        {
+          "candidate_ms": 560.0128663331641,
+          "control_ms": 553.3436560485756
+        },
+        {
+          "candidate_ms": 556.1988886661933,
+          "control_ms": 553.5581266043656
+        },
+        {
+          "candidate_ms": 557.8859753981624,
+          "control_ms": 557.8892300794503
+        },
+        {
+          "candidate_ms": 555.3871296931736,
+          "control_ms": 542.7837434755705
+        },
+        {
+          "candidate_ms": 556.4732311455682,
+          "control_ms": 540.9252601982645
+        },
+        {
+          "candidate_ms": 558.4898909873223,
+          "control_ms": 548.291897579981
+        },
+        {
+          "candidate_ms": 556.0182757843537,
+          "control_ms": 546.6510917872905
+        },
+        {
+          "candidate_ms": 558.1154096384183,
+          "control_ms": 551.636309783294
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-019\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-020",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "10.747",
+        "bootstrap_ci_low_ms": "-4.402",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "534.165,556.618,550.316,536.4,546.185,542.418,530.215,548.898,526.357,537.102,537.521,545.368",
+        "confidence_ci_width_ms": "15.149",
+        "confidence_decisiveness": "-0.4708",
+        "confidence_margin_ms": "-7.132",
+        "confidence_sign_consistency": "0.6667",
+        "confidence_tier": "weak",
+        "control_median_ms": "546.057",
+        "control_sample_count": "12",
+        "control_samples_ms": "563.554,545.471,544.958,549.598,539.451,546.643,551.245,557.195,534.05,544.965,534.075,549.497",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.730",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "12.227",
+        "median_delta_ms": "5.959",
+        "naive_k1_first_delta_ms": "29.389",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "29.3888,-11.1471,-5.35787,13.1977,-6.73437,4.22486,21.0294,8.29656,7.69245,7.86345,-3.44568,4.12919",
+        "paired_mean_ms": "5.761",
+        "paired_range_ms": "40.536",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "11.742",
+        "permutation_p_value": "0.106947",
+        "power_at_observed_effect": "0.1568",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 534.1649317082198,
+          "control_ms": 563.5537602431576
+        },
+        {
+          "candidate_ms": 556.6184522359595,
+          "control_ms": 545.4713364682331
+        },
+        {
+          "candidate_ms": 550.3159358679528,
+          "control_ms": 544.9580620519453
+        },
+        {
+          "candidate_ms": 536.4004487452148,
+          "control_ms": 549.5981240064044
+        },
+        {
+          "candidate_ms": 546.185108518529,
+          "control_ms": 539.4507428026832
+        },
+        {
+          "candidate_ms": 542.4182085236846,
+          "control_ms": 546.6430718633209
+        },
+        {
+          "candidate_ms": 530.215472903706,
+          "control_ms": 551.2448841383891
+        },
+        {
+          "candidate_ms": 548.8979370018048,
+          "control_ms": 557.1945015831924
+        },
+        {
+          "candidate_ms": 526.3573990207533,
+          "control_ms": 534.0498527726874
+        },
+        {
+          "candidate_ms": 537.1020478168779,
+          "control_ms": 544.9654976941152
+        },
+        {
+          "candidate_ms": 537.5207410827328,
+          "control_ms": 534.0750619954604
+        },
+        {
+          "candidate_ms": 545.3676580981411,
+          "control_ms": 549.496844479042
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-020\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-021",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "-1.606",
+        "bootstrap_ci_low_ms": "-16.718",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "551.694,567.933,562.101,546.858,571.745,571.686,574.231,565.739,558.263,562.109,553.889,567.596",
+        "confidence_ci_width_ms": "15.112",
+        "confidence_decisiveness": "-1.2893",
+        "confidence_margin_ms": "-19.484",
+        "confidence_sign_consistency": "0.8333",
+        "confidence_tier": "weak",
+        "control_median_ms": "553.024",
+        "control_sample_count": "12",
+        "control_samples_ms": "549.716,583.371,540.379,541.954,558.408,567.63,553.356,552.692,557.028,550.473,567.144,547.496",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.765",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "12.713",
+        "median_delta_ms": "-8.270",
+        "naive_k1_first_delta_ms": "-1.978",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-1.9776,15.4379,-21.7213,-4.9034,-13.3366,-4.05609,-20.8751,-13.0468,-1.23477,-11.6366,13.2559,-20.1002",
+        "paired_mean_ms": "-7.016",
+        "paired_range_ms": "37.159",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "12.301",
+        "permutation_p_value": "0.945027",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 551.6940261370901,
+          "control_ms": 549.7164234741075
+        },
+        {
+          "candidate_ms": 567.9332384909372,
+          "control_ms": 583.3711580251653
+        },
+        {
+          "candidate_ms": 562.1006051858261,
+          "control_ms": 540.3793371656488
+        },
+        {
+          "candidate_ms": 546.8576074061448,
+          "control_ms": 541.9542086997358
+        },
+        {
+          "candidate_ms": 571.7445733924934,
+          "control_ms": 558.4079480308062
+        },
+        {
+          "candidate_ms": 571.6864937470352,
+          "control_ms": 567.6304058538076
+        },
+        {
+          "candidate_ms": 574.2313220153251,
+          "control_ms": 553.3562008465532
+        },
+        {
+          "candidate_ms": 565.7391053114663,
+          "control_ms": 552.6923053707046
+        },
+        {
+          "candidate_ms": 558.263245881605,
+          "control_ms": 557.0284772808694
+        },
+        {
+          "candidate_ms": 562.1094194460353,
+          "control_ms": 550.4727840982691
+        },
+        {
+          "candidate_ms": 553.8885018517899,
+          "control_ms": 567.144426975915
+        },
+        {
+          "candidate_ms": 567.5960692108847,
+          "control_ms": 547.4958403799604
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-021\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-022",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "28.390",
+        "bootstrap_ci_low_ms": "-20.392",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "529.876,554.314,550.227,491.949,516.077,517.826,545.932,596.517,504.499,559.358,498.642,568.647",
+        "confidence_ci_width_ms": "48.781",
+        "confidence_decisiveness": "-0.4727",
+        "confidence_margin_ms": "-23.060",
+        "confidence_sign_consistency": "0.6667",
+        "confidence_tier": "weak",
+        "control_median_ms": "533.747",
+        "control_sample_count": "12",
+        "control_samples_ms": "555.344,568.064,533.592,525.151,528.353,524.809,577.244,523.914,577.321,535.21,509.035,533.903",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.669",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "33.114",
+        "median_delta_ms": "11.334",
+        "naive_k1_first_delta_ms": "25.468",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "25.4683,13.7496,-16.6356,33.2018,12.2762,6.98269,31.3114,-72.6031,72.822,-24.1477,10.3926,-34.7437",
+        "paired_mean_ms": "4.840",
+        "paired_range_ms": "145.425",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "37.644",
+        "permutation_p_value": "0.282359",
+        "power_at_observed_effect": "0.1225",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 529.875536319789,
+          "control_ms": 555.3438477459264
+        },
+        {
+          "candidate_ms": 554.3139527741693,
+          "control_ms": 568.0635726758973
+        },
+        {
+          "candidate_ms": 550.2271477317599,
+          "control_ms": 533.5915737076632
+        },
+        {
+          "candidate_ms": 491.94902539974856,
+          "control_ms": 525.1507887549371
+        },
+        {
+          "candidate_ms": 516.0767813984651,
+          "control_ms": 528.3530243881232
+        },
+        {
+          "candidate_ms": 517.8261359873734,
+          "control_ms": 524.8088301714552
+        },
+        {
+          "candidate_ms": 545.9321676400878,
+          "control_ms": 577.2435687866239
+        },
+        {
+          "candidate_ms": 596.5168423530613,
+          "control_ms": 523.9137722998433
+        },
+        {
+          "candidate_ms": 504.4989424533142,
+          "control_ms": 577.320976348945
+        },
+        {
+          "candidate_ms": 559.3580233257127,
+          "control_ms": 535.2103535355653
+        },
+        {
+          "candidate_ms": 498.64230996495127,
+          "control_ms": 509.0348661438821
+        },
+        {
+          "candidate_ms": 568.6470172803299,
+          "control_ms": 533.9033422270961
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-022\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-023",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "29.033",
+        "bootstrap_ci_low_ms": "-14.848",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "514.048,542.8,577.186,534.931,538.433,566.799,509.996,558.324,545.097,543.324,525.432,568.865",
+        "confidence_ci_width_ms": "43.882",
+        "confidence_decisiveness": "-0.4013",
+        "confidence_margin_ms": "-17.609",
+        "confidence_sign_consistency": "0.5833",
+        "confidence_tier": "weak",
+        "control_median_ms": "552.120",
+        "control_sample_count": "12",
+        "control_samples_ms": "551.576,533.031,541.202,563.112,552.551,554.278,555.417,540.03,552.745,543.801,555.318,551.69",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.761",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "23.439",
+        "median_delta_ms": "4.062",
+        "naive_k1_first_delta_ms": "37.529",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "37.5287,-9.7693,-35.9847,28.1807,14.118,-12.5211,45.4208,-18.2948,7.64769,0.476309,29.8863,-17.1753",
+        "paired_mean_ms": "5.793",
+        "paired_range_ms": "81.406",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "25.568",
+        "permutation_p_value": "0.443778",
+        "power_at_observed_effect": "0.0372",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 514.0477089478051,
+          "control_ms": 551.5763871343244
+        },
+        {
+          "candidate_ms": 542.8004416078788,
+          "control_ms": 533.0311416691922
+        },
+        {
+          "candidate_ms": 577.1862654789545,
+          "control_ms": 541.2015605349604
+        },
+        {
+          "candidate_ms": 534.9312230236105,
+          "control_ms": 563.1119185654887
+        },
+        {
+          "candidate_ms": 538.4328020253507,
+          "control_ms": 552.550822034494
+        },
+        {
+          "candidate_ms": 566.7991948835524,
+          "control_ms": 554.2780939696586
+        },
+        {
+          "candidate_ms": 509.9963890028805,
+          "control_ms": 555.417221309156
+        },
+        {
+          "candidate_ms": 558.3243727832119,
+          "control_ms": 540.0295456932104
+        },
+        {
+          "candidate_ms": 545.0968480140648,
+          "control_ms": 552.7445403848867
+        },
+        {
+          "candidate_ms": 543.3244388000148,
+          "control_ms": 543.8007480438065
+        },
+        {
+          "candidate_ms": 525.4315599527379,
+          "control_ms": 555.3178590733946
+        },
+        {
+          "candidate_ms": 568.8651326822146,
+          "control_ms": 551.6898604995965
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-023\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-024",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "20.823",
+        "bootstrap_ci_low_ms": "-9.280",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "541.391,540.909,543.557,543.124",
+        "confidence_ci_width_ms": "30.103",
+        "confidence_decisiveness": "-0.3995",
+        "confidence_margin_ms": "-12.025",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "548.899",
+        "control_sample_count": "4",
+        "control_samples_ms": "562.214,548.534,549.264,533.843",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.744",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "20.010",
+        "median_delta_ms": "6.666",
+        "naive_k1_first_delta_ms": "20.823",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "20.8226,7.62489,5.70678,-9.28029",
+        "paired_mean_ms": "6.218",
+        "paired_range_ms": "30.103",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "12.325",
+        "permutation_p_value": "0.309845",
+        "power_at_observed_effect": "0.0928",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 541.3912413600674,
+          "control_ms": 562.2138342612604
+        },
+        {
+          "candidate_ms": 540.9086991010831,
+          "control_ms": 548.5335880629797
+        },
+        {
+          "candidate_ms": 543.5572818324868,
+          "control_ms": 549.264064026857
+        },
+        {
+          "candidate_ms": 543.123604346131,
+          "control_ms": 533.8433192576185
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-024\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-025",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-6.303",
+        "bootstrap_ci_low_ms": "-15.539",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "558.541,555.885,557.131,557.198",
+        "confidence_ci_width_ms": "9.236",
+        "confidence_decisiveness": "-1.9784",
+        "confidence_margin_ms": "-18.272",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "546.645",
+        "control_sample_count": "4",
+        "control_samples_ms": "552.238,548.812,544.479,541.658",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.733",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.963",
+        "median_delta_ms": "-9.863",
+        "naive_k1_first_delta_ms": "-6.303",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-6.3032,-7.07304,-12.6522,-15.5392",
+        "paired_mean_ms": "-10.392",
+        "paired_range_ms": "9.236",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "4.447",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 558.5411782559767,
+          "control_ms": 552.2379745956777
+        },
+        {
+          "candidate_ms": 555.8849295974484,
+          "control_ms": 548.8118906121093
+        },
+        {
+          "candidate_ms": 557.1307338475933,
+          "control_ms": 544.4785425252684
+        },
+        {
+          "candidate_ms": 557.1975585430748,
+          "control_ms": 541.6584053065543
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-025\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-026",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "16.660",
+        "bootstrap_ci_low_ms": "-0.950",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "540.652,542.837,539.059,545.194",
+        "confidence_ci_width_ms": "17.610",
+        "confidence_decisiveness": "-0.2103",
+        "confidence_margin_ms": "-3.703",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "550.585",
+        "control_sample_count": "4",
+        "control_samples_ms": "550.915,541.887,550.254,561.853",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.753",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "13.102",
+        "median_delta_ms": "10.729",
+        "naive_k1_first_delta_ms": "10.263",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "10.2628,-0.950314,11.1948,16.6597",
+        "paired_mean_ms": "9.292",
+        "paired_range_ms": "17.610",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "7.388",
+        "permutation_p_value": "0.123438",
+        "power_at_observed_effect": "0.5789",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 540.6520694738447,
+          "control_ms": 550.9148891621348
+        },
+        {
+          "candidate_ms": 542.8370319723659,
+          "control_ms": 541.8867180166061
+        },
+        {
+          "candidate_ms": 539.0594030839894,
+          "control_ms": 550.2541635608525
+        },
+        {
+          "candidate_ms": 545.1936253071593,
+          "control_ms": 561.8533039571805
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-026\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-027",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-4.027",
+        "bootstrap_ci_low_ms": "-14.854",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "552.349,557.967,556.237,557.149",
+        "confidence_ci_width_ms": "10.827",
+        "confidence_decisiveness": "-1.6247",
+        "confidence_margin_ms": "-17.590",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "547.308",
+        "control_sample_count": "4",
+        "control_samples_ms": "548.087,543.113,552.21,546.53",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.737",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "10.096",
+        "median_delta_ms": "-7.441",
+        "naive_k1_first_delta_ms": "-4.262",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-4.26221,-14.8538,-4.02704,-10.619",
+        "paired_mean_ms": "-8.441",
+        "paired_range_ms": "10.827",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "5.254",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 552.3488677410976,
+          "control_ms": 548.0866545333968
+        },
+        {
+          "candidate_ms": 557.9669251466404,
+          "control_ms": 543.1131353450849
+        },
+        {
+          "candidate_ms": 556.2373199433832,
+          "control_ms": 552.2102844645748
+        },
+        {
+          "candidate_ms": 557.1486072012586,
+          "control_ms": 546.5296128170593
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-027\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-028",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "24.706",
+        "bootstrap_ci_low_ms": "0.824",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "544.835,547.481,541.217,532.117",
+        "confidence_ci_width_ms": "23.882",
+        "confidence_decisiveness": "-0.0809",
+        "confidence_margin_ms": "-1.933",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "551.461",
+        "control_sample_count": "4",
+        "control_samples_ms": "569.542,548.305,554.293,548.629",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.757",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "16.653",
+        "median_delta_ms": "14.794",
+        "naive_k1_first_delta_ms": "24.706",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "24.7062,0.82429,13.0763,16.5122",
+        "paired_mean_ms": "13.780",
+        "paired_range_ms": "23.882",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "9.920",
+        "permutation_p_value": "0.121439",
+        "power_at_observed_effect": "0.6797",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 544.8354399286179,
+          "control_ms": 569.5415934513285
+        },
+        {
+          "candidate_ms": 547.481187872591,
+          "control_ms": 548.3054782782374
+        },
+        {
+          "candidate_ms": 541.2171652665971,
+          "control_ms": 554.2934806789781
+        },
+        {
+          "candidate_ms": 532.1169766928019,
+          "control_ms": 548.6292153599037
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-028\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-029",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "9.239",
+        "bootstrap_ci_low_ms": "-16.742",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "561.836,562.089,557.708,552.593",
+        "confidence_ci_width_ms": "25.981",
+        "confidence_decisiveness": "-0.7517",
+        "confidence_margin_ms": "-19.531",
+        "confidence_sign_consistency": "0.5000",
+        "confidence_tier": "weak",
+        "control_median_ms": "557.927",
+        "control_sample_count": "4",
+        "control_samples_ms": "554.021,545.347,563.785,561.832",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.790",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "19.798",
+        "median_delta_ms": "-0.869",
+        "naive_k1_first_delta_ms": "-7.815",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-7.81525,-16.7416,6.07642,9.23948",
+        "paired_mean_ms": "-2.310",
+        "paired_range_ms": "25.981",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "12.142",
+        "permutation_p_value": "0.643178",
+        "power_at_observed_effect": "0.0052",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 561.8361363101076,
+          "control_ms": 554.0208911015826
+        },
+        {
+          "candidate_ms": 562.0888108094807,
+          "control_ms": 545.3472519796859
+        },
+        {
+          "candidate_ms": 557.708388531032,
+          "control_ms": 563.7848045948076
+        },
+        {
+          "candidate_ms": 552.592665312277,
+          "control_ms": 561.8321421745982
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-029\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-030",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "92.115",
+        "bootstrap_ci_low_ms": "14.792",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "454.234,551.074,513.115,517.467",
+        "confidence_ci_width_ms": "77.323",
+        "confidence_decisiveness": "0.1554",
+        "confidence_margin_ms": "12.014",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "555.589",
+        "control_sample_count": "4",
+        "control_samples_ms": "546.349,565.865,564.83,542.782",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.778",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "51.040",
+        "median_delta_ms": "38.515",
+        "naive_k1_first_delta_ms": "92.115",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "92.1147,14.7916,51.7149,25.3148",
+        "paired_mean_ms": "45.984",
+        "paired_range_ms": "77.323",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "34.453",
+        "permutation_p_value": "0.128936",
+        "power_at_observed_effect": "0.5456",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 454.23380677169644,
+          "control_ms": 546.3485224816259
+        },
+        {
+          "candidate_ms": 551.0736985398644,
+          "control_ms": 565.8652862964761
+        },
+        {
+          "candidate_ms": 513.1151817714427,
+          "control_ms": 564.830037776851
+        },
+        {
+          "candidate_ms": 517.4672599759972,
+          "control_ms": 542.782054829139
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-030\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-031",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "67.262",
+        "bootstrap_ci_low_ms": "-59.467",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "581.425,563.561,496.868,571.012",
+        "confidence_ci_width_ms": "126.729",
+        "confidence_decisiveness": "-0.4907",
+        "confidence_margin_ms": "-62.190",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "544.588",
+        "control_sample_count": "4",
+        "control_samples_ms": "546.784,504.094,564.13,542.391",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.723",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "80.760",
+        "median_delta_ms": "-31.631",
+        "naive_k1_first_delta_ms": "-34.641",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-34.6411,-59.4672,67.2616,-28.6208",
+        "paired_mean_ms": "-13.867",
+        "paired_range_ms": "126.729",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "55.709",
+        "permutation_p_value": "0.811594",
+        "power_at_observed_effect": "0.0007",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 581.4250446918434,
+          "control_ms": 546.7839933556954
+        },
+        {
+          "candidate_ms": 563.5610919958943,
+          "control_ms": 504.093912527925
+        },
+        {
+          "candidate_ms": 496.86835061191397,
+          "control_ms": 564.1299550194561
+        },
+        {
+          "candidate_ms": 571.0118311408811,
+          "control_ms": 542.3910740451846
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-031\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-032",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "13.905",
+        "bootstrap_ci_low_ms": "7.066",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "539.033,539.857,538.68,539.703,538.024,539.528,536.944,540.527",
+        "confidence_ci_width_ms": "6.839",
+        "confidence_decisiveness": "0.6314",
+        "confidence_margin_ms": "4.318",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "marginal",
+        "control_median_ms": "549.640",
+        "control_sample_count": "8",
+        "control_samples_ms": "550.298,546.924,556.046,548.662,548.982,550.462,550.85,537.563",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.748",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.666",
+        "median_delta_ms": "10.946",
+        "naive_k1_first_delta_ms": "11.266",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "11.2657,7.06642,17.366,8.95926,10.9577,10.9336,13.9051,-2.96394",
+        "paired_mean_ms": "9.686",
+        "paired_range_ms": "20.330",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "5.975",
+        "permutation_p_value": "0.032984",
+        "power_at_observed_effect": "0.9726",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 539.0327691479636,
+          "control_ms": 550.2984703303883
+        },
+        {
+          "candidate_ms": 539.8574643312334,
+          "control_ms": 546.9238854888384
+        },
+        {
+          "candidate_ms": 538.6802549617728,
+          "control_ms": 556.0462810563725
+        },
+        {
+          "candidate_ms": 539.7029307223978,
+          "control_ms": 548.6621937356775
+        },
+        {
+          "candidate_ms": 538.0244447259537,
+          "control_ms": 548.9821712037993
+        },
+        {
+          "candidate_ms": 539.5284369251982,
+          "control_ms": 550.4620711317446
+        },
+        {
+          "candidate_ms": 536.9444656280616,
+          "control_ms": 550.8496131395556
+        },
+        {
+          "candidate_ms": 540.5271185369123,
+          "control_ms": 537.5631753689904
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-032\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-033",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-3.443",
+        "bootstrap_ci_low_ms": "-11.860",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "559.509,558.292,557.878,559.396,559.372,558.2,558.365,559.937",
+        "confidence_ci_width_ms": "8.417",
+        "confidence_decisiveness": "-1.7362",
+        "confidence_margin_ms": "-14.613",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "weak",
+        "control_median_ms": "550.686",
+        "control_sample_count": "8",
+        "control_samples_ms": "552.899,554.85,544.674,553.39,563.321,548.381,548.473,546.11",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.753",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.481",
+        "median_delta_ms": "-8.214",
+        "naive_k1_first_delta_ms": "-6.610",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-6.61033,-3.44289,-13.2041,-6.00559,3.9492,-9.81834,-9.89169,-13.8277",
+        "paired_mean_ms": "-7.356",
+        "paired_range_ms": "17.777",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "5.783",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 559.5089314574748,
+          "control_ms": 552.8985990197658
+        },
+        {
+          "candidate_ms": 558.2924111337513,
+          "control_ms": 554.8495170639378
+        },
+        {
+          "candidate_ms": 557.8778501768332,
+          "control_ms": 544.6737906568101
+        },
+        {
+          "candidate_ms": 559.395900537386,
+          "control_ms": 553.3903109885053
+        },
+        {
+          "candidate_ms": 559.3721400180464,
+          "control_ms": 563.3213404832317
+        },
+        {
+          "candidate_ms": 558.199701672627,
+          "control_ms": 548.3813580860141
+        },
+        {
+          "candidate_ms": 558.3649471334743,
+          "control_ms": 548.4732545242922
+        },
+        {
+          "candidate_ms": 559.9373844890965,
+          "control_ms": 546.1097300612856
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-033\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-034",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "13.962",
+        "bootstrap_ci_low_ms": "6.809",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "537.02,537.898,538.061,536.087,538.614,539.231,535.05,540.122",
+        "confidence_ci_width_ms": "7.153",
+        "confidence_decisiveness": "0.5692",
+        "confidence_margin_ms": "4.071",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "547.597",
+        "control_sample_count": "8",
+        "control_samples_ms": "549.061,542.051,554.585,544.638,546.408,548.786,541.859,555.988",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.738",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "7.047",
+        "median_delta_ms": "9.053",
+        "naive_k1_first_delta_ms": "12.041",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "12.0412,4.15269,16.524,8.55137,7.79401,9.55532,6.80936,15.8661",
+        "paired_mean_ms": "10.162",
+        "paired_range_ms": "12.371",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "4.350",
+        "permutation_p_value": "0.031484",
+        "power_at_observed_effect": "0.9841",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 537.0196648896401,
+          "control_ms": 549.060849574412
+        },
+        {
+          "candidate_ms": 537.8978415014443,
+          "control_ms": 542.050531025432
+        },
+        {
+          "candidate_ms": 538.0611799668105,
+          "control_ms": 554.5851492523564
+        },
+        {
+          "candidate_ms": 536.0868134394701,
+          "control_ms": 544.6381851073334
+        },
+        {
+          "candidate_ms": 538.6143699792133,
+          "control_ms": 546.4083845330942
+        },
+        {
+          "candidate_ms": 539.230938093982,
+          "control_ms": 548.7862624567132
+        },
+        {
+          "candidate_ms": 535.0500294372052,
+          "control_ms": 541.8593929339589
+        },
+        {
+          "candidate_ms": 540.1222078961459,
+          "control_ms": 555.9883421577829
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-034\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-035",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-8.016",
+        "bootstrap_ci_low_ms": "-19.841",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "561.467,563.101,562.068,567.32,564.853,566.041,562.014,565.573",
+        "confidence_ci_width_ms": "11.826",
+        "confidence_decisiveness": "-1.9094",
+        "confidence_margin_ms": "-22.580",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "547.645",
+        "control_sample_count": "8",
+        "control_samples_ms": "553.451,546.513,547.912,550.927,561.82,539.336,542.172,547.378",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.738",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "9.908",
+        "median_delta_ms": "-16.490",
+        "naive_k1_first_delta_ms": "-8.016",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-8.01583,-16.5872,-14.1557,-16.3935,-3.03308,-26.7042,-19.8415,-18.1948",
+        "paired_mean_ms": "-15.366",
+        "paired_range_ms": "23.671",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "7.238",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 561.4665337208799,
+          "control_ms": 553.4507019882942
+        },
+        {
+          "candidate_ms": 563.1006156644828,
+          "control_ms": 546.5133792268649
+        },
+        {
+          "candidate_ms": 562.0680535023614,
+          "control_ms": 547.9123529415535
+        },
+        {
+          "candidate_ms": 567.3204381561577,
+          "control_ms": 550.9269311393639
+        },
+        {
+          "candidate_ms": 564.8530736758478,
+          "control_ms": 561.8199956657724
+        },
+        {
+          "candidate_ms": 566.0406437597934,
+          "control_ms": 539.3364459203763
+        },
+        {
+          "candidate_ms": 562.0137468840167,
+          "control_ms": 542.1722708580404
+        },
+        {
+          "candidate_ms": 565.573130069617,
+          "control_ms": 547.3783291493193
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-035\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-036",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "17.132",
+        "bootstrap_ci_low_ms": "-12.477",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "533.067,541.946,526.353,553.404,543.073,556.208,560.553,554.564",
+        "confidence_ci_width_ms": "29.609",
+        "confidence_decisiveness": "-0.5135",
+        "confidence_margin_ms": "-15.206",
+        "confidence_sign_consistency": "0.6250",
+        "confidence_tier": "weak",
+        "control_median_ms": "545.725",
+        "control_sample_count": "8",
+        "control_samples_ms": "547.966,562.203,543.485,557.069,542.149,543.382,536.542,556.367",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.729",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "17.864",
+        "median_delta_ms": "2.734",
+        "naive_k1_first_delta_ms": "14.899",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "14.8988,20.2573,17.1322,3.66477,-0.924805,-12.8256,-24.0112,1.80302",
+        "paired_mean_ms": "2.499",
+        "paired_range_ms": "44.269",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "15.280",
+        "permutation_p_value": "0.274863",
+        "power_at_observed_effect": "0.0251",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 533.0668516098955,
+          "control_ms": 547.9656140318742
+        },
+        {
+          "candidate_ms": 541.94553782522,
+          "control_ms": 562.2028421245026
+        },
+        {
+          "candidate_ms": 526.3528424718176,
+          "control_ms": 543.485048569835
+        },
+        {
+          "candidate_ms": 553.4037855801495,
+          "control_ms": 557.06855525135
+        },
+        {
+          "candidate_ms": 543.0733208670928,
+          "control_ms": 542.148516049057
+        },
+        {
+          "candidate_ms": 556.2080398522974,
+          "control_ms": 543.3824440252631
+        },
+        {
+          "candidate_ms": 560.5533127632373,
+          "control_ms": 536.5421058006132
+        },
+        {
+          "candidate_ms": 554.5643382633328,
+          "control_ms": 556.367353749549
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-036\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-037",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-3.411",
+        "bootstrap_ci_low_ms": "-24.313",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "564.095,569.004,552.958,580.301,574.597,549.333,545.282,574.381",
+        "confidence_ci_width_ms": "20.901",
+        "confidence_decisiveness": "-1.2948",
+        "confidence_margin_ms": "-27.063",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "weak",
+        "control_median_ms": "550.061",
+        "control_sample_count": "8",
+        "control_samples_ms": "552.386,557.565,552.986,547.737,547.62,545.922,537.562,552.87",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.750",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "14.157",
+        "median_delta_ms": "-11.574",
+        "naive_k1_first_delta_ms": "-11.709",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-11.7088,-11.4383,0.0284483,-32.5642,-26.9768,-3.41106,-7.72052,-21.5116",
+        "paired_mean_ms": "-14.413",
+        "paired_range_ms": "32.593",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "11.516",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 564.0947039672234,
+          "control_ms": 552.3858551774744
+        },
+        {
+          "candidate_ms": 569.0036481621719,
+          "control_ms": 557.565333964608
+        },
+        {
+          "candidate_ms": 552.958028524846,
+          "control_ms": 552.9864768416935
+        },
+        {
+          "candidate_ms": 580.3008231936906,
+          "control_ms": 547.7366180045307
+        },
+        {
+          "candidate_ms": 574.5969744210031,
+          "control_ms": 547.6201530432133
+        },
+        {
+          "candidate_ms": 549.3325789506889,
+          "control_ms": 545.9215186061278
+        },
+        {
+          "candidate_ms": 545.2820644991236,
+          "control_ms": 537.5615493808608
+        },
+        {
+          "candidate_ms": 574.3812190624706,
+          "control_ms": 552.8696298242255
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-037\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-038",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "31.935",
+        "bootstrap_ci_low_ms": "-34.161",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "520.898,487.158,547.86,563.173,609.77,571.333,571.45,558.172",
+        "confidence_ci_width_ms": "66.096",
+        "confidence_decisiveness": "-0.5586",
+        "confidence_margin_ms": "-36.923",
+        "confidence_sign_consistency": "0.6250",
+        "confidence_tier": "weak",
+        "control_median_ms": "552.429",
+        "control_sample_count": "8",
+        "control_samples_ms": "547.834,557.023,579.796,534.379,545.984,585.451,537.288,572.967",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.762",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "45.431",
+        "median_delta_ms": "14.456",
+        "naive_k1_first_delta_ms": "26.937",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "26.9369,69.8649,31.9354,-28.7937,-63.786,14.1177,-34.1611,14.7942",
+        "paired_mean_ms": "3.864",
+        "paired_range_ms": "133.651",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "43.078",
+        "permutation_p_value": "0.353323",
+        "power_at_observed_effect": "0.1166",
+        "raw_verdict": "NOISY_PENDING",
+        "sign_min": "0.900",
+        "verdict": "NOISY_PENDING"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 520.8975690072107,
+          "control_ms": 547.8344712313907
+        },
+        {
+          "candidate_ms": 487.1578579242325,
+          "control_ms": 557.0227127480568
+        },
+        {
+          "candidate_ms": 547.860129901053,
+          "control_ms": 579.7955046284487
+        },
+        {
+          "candidate_ms": 563.1730108704742,
+          "control_ms": 534.3792918916488
+        },
+        {
+          "candidate_ms": 609.7704441198393,
+          "control_ms": 545.9844786395375
+        },
+        {
+          "candidate_ms": 571.3331237647004,
+          "control_ms": 585.4508302158383
+        },
+        {
+          "candidate_ms": 571.4495380202493,
+          "control_ms": 537.2884254010823
+        },
+        {
+          "candidate_ms": 558.1724291983376,
+          "control_ms": 572.9666327417727
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-038\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-039",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-9.708",
+        "bootstrap_ci_low_ms": "-31.047",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "578.027,574.863,564.49,564.934,592.702,585.836,593.782,538.867",
+        "confidence_ci_width_ms": "21.339",
+        "confidence_decisiveness": "-1.5849",
+        "confidence_margin_ms": "-33.821",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "weak",
+        "control_median_ms": "554.909",
+        "control_sample_count": "8",
+        "control_samples_ms": "586.097,538.858,545.326,548.162,561.656,561.904,562.965,529.16",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.775",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "16.860",
+        "median_delta_ms": "-21.548",
+        "naive_k1_first_delta_ms": "8.070",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "8.07014,-36.0055,-19.1645,-16.7715,-31.0467,-23.9321,-30.8173,-9.70764",
+        "paired_mean_ms": "-19.922",
+        "paired_range_ms": "44.076",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "14.221",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 578.0271283849105,
+          "control_ms": 586.0972711332529
+        },
+        {
+          "candidate_ms": 574.8632060564853,
+          "control_ms": 538.8576820354024
+        },
+        {
+          "candidate_ms": 564.4903943822118,
+          "control_ms": 545.3258714943267
+        },
+        {
+          "candidate_ms": 564.9339173344129,
+          "control_ms": 548.1623696989404
+        },
+        {
+          "candidate_ms": 592.7024317973876,
+          "control_ms": 561.6557466799353
+        },
+        {
+          "candidate_ms": 585.8358008784339,
+          "control_ms": 561.9037145714137
+        },
+        {
+          "candidate_ms": 593.7819665856671,
+          "control_ms": 562.9646624740819
+        },
+        {
+          "candidate_ms": 538.8674344860398,
+          "control_ms": 529.1597964524807
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-039\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-040",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "15.067",
+        "bootstrap_ci_low_ms": "6.799",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "540.155,540.709,539.405,540.589,539.468,538.946,540.044,538.993,537.452,540.681,539.783,540.172",
+        "confidence_ci_width_ms": "8.268",
+        "confidence_decisiveness": "0.4884",
+        "confidence_margin_ms": "4.038",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "552.186",
+        "control_sample_count": "12",
+        "control_samples_ms": "547.955,543.433,559.202,556.231,566.536,552.996,549.82,553.484,551.376,554.184,543.7,545.97",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.761",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.365",
+        "median_delta_ms": "13.714",
+        "naive_k1_first_delta_ms": "7.799",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "7.79942,2.72402,19.7973,15.6426,27.068,14.0508,9.77557,14.4912,13.9246,13.5038,3.91675,5.79815",
+        "paired_mean_ms": "12.374",
+        "paired_range_ms": "24.344",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "6.930",
+        "permutation_p_value": "0.009995",
+        "power_at_observed_effect": "0.9998",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 540.1551436791301,
+          "control_ms": 547.9545626592358
+        },
+        {
+          "candidate_ms": 540.708552581004,
+          "control_ms": 543.4325745042261
+        },
+        {
+          "candidate_ms": 539.4048667835928,
+          "control_ms": 559.2021790697793
+        },
+        {
+          "candidate_ms": 540.5888899817768,
+          "control_ms": 556.2314591794391
+        },
+        {
+          "candidate_ms": 539.467838962533,
+          "control_ms": 566.5358424469595
+        },
+        {
+          "candidate_ms": 538.9455309036954,
+          "control_ms": 552.9963773278214
+        },
+        {
+          "candidate_ms": 540.0441392148134,
+          "control_ms": 549.819712952985
+        },
+        {
+          "candidate_ms": 538.993106538931,
+          "control_ms": 553.4842834964711
+        },
+        {
+          "candidate_ms": 537.4516613275964,
+          "control_ms": 551.376212277035
+        },
+        {
+          "candidate_ms": 540.6805238063694,
+          "control_ms": 554.1843073570637
+        },
+        {
+          "candidate_ms": 539.7831181672174,
+          "control_ms": 543.6998675113873
+        },
+        {
+          "candidate_ms": 540.1720235739713,
+          "control_ms": 545.9701775681269
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-040\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-041",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "-9.261",
+        "bootstrap_ci_low_ms": "-19.930",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "562.207,563.66,562.195,563.585,563.029,561.797,563.244,563.267,563.591,563.886,563.524,562.11",
+        "confidence_ci_width_ms": "10.669",
+        "confidence_decisiveness": "-2.1257",
+        "confidence_margin_ms": "-22.678",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.596",
+        "control_sample_count": "12",
+        "control_samples_ms": "552.705,550.793,541.462,543.174,541.707,554.723,559.495,546.45,544.142,552.65,548.399,553.09",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.748",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "7.538",
+        "median_delta_ms": "-13.996",
+        "naive_k1_first_delta_ms": "-9.503",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-9.50278,-12.8669,-20.7329,-20.4107,-21.3225,-7.07353,-3.7487,-16.8166,-19.4491,-11.236,-15.1243,-9.01999",
+        "paired_mean_ms": "-13.942",
+        "paired_range_ms": "17.574",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "5.923",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 562.2074410314269,
+          "control_ms": 552.7046645317185
+        },
+        {
+          "candidate_ms": 563.659697806553,
+          "control_ms": 550.7928357747056
+        },
+        {
+          "candidate_ms": 562.1951831681737,
+          "control_ms": 541.4622368995738
+        },
+        {
+          "candidate_ms": 563.5845183223919,
+          "control_ms": 543.1738201301795
+        },
+        {
+          "candidate_ms": 563.0290527292669,
+          "control_ms": 541.7065506354495
+        },
+        {
+          "candidate_ms": 561.7965746321069,
+          "control_ms": 554.7230400179925
+        },
+        {
+          "candidate_ms": 563.2435555058638,
+          "control_ms": 559.4948597164062
+        },
+        {
+          "candidate_ms": 563.266761585402,
+          "control_ms": 546.4502112487874
+        },
+        {
+          "candidate_ms": 563.5912309551231,
+          "control_ms": 544.1420818901631
+        },
+        {
+          "candidate_ms": 563.8863707781015,
+          "control_ms": 552.6503273649088
+        },
+        {
+          "candidate_ms": 563.5237731787928,
+          "control_ms": 548.3994670376088
+        },
+        {
+          "candidate_ms": 562.1095743722806,
+          "control_ms": 553.0895837643176
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-041\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-042",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "18.738",
+        "bootstrap_ci_low_ms": "9.823",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "539.27,539.658,541.295,538.814,538.336,537.379,535.128,536.525,542.088,538.412,540.852,541.963",
+        "confidence_ci_width_ms": "8.915",
+        "confidence_decisiveness": "0.7918",
+        "confidence_margin_ms": "7.059",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "552.705",
+        "control_sample_count": "12",
+        "control_samples_ms": "548.733,544.402,551.478,560.489,558.246,554.945,557.306,550.372,552.651,555.582,543.868,552.759",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.764",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "7.896",
+        "median_delta_ms": "12.321",
+        "naive_k1_first_delta_ms": "9.463",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "9.46291,4.7436,10.1823,21.6743,19.9094,17.5663,22.1776,13.8477,10.5627,17.1693,3.01668,10.7952",
+        "paired_mean_ms": "13.426",
+        "paired_range_ms": "19.161",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "6.347",
+        "permutation_p_value": "0.007996",
+        "power_at_observed_effect": "0.9994",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 539.2696564505451,
+          "control_ms": 548.7325704351715
+        },
+        {
+          "candidate_ms": 539.657901998754,
+          "control_ms": 544.4015048431518
+        },
+        {
+          "candidate_ms": 541.2953897390377,
+          "control_ms": 551.4776673979968
+        },
+        {
+          "candidate_ms": 538.8141953512426,
+          "control_ms": 560.4885037331876
+        },
+        {
+          "candidate_ms": 538.33646183016,
+          "control_ms": 558.2458351754083
+        },
+        {
+          "candidate_ms": 537.3792290679419,
+          "control_ms": 554.9454837749107
+        },
+        {
+          "candidate_ms": 535.1281443254815,
+          "control_ms": 557.3057488487748
+        },
+        {
+          "candidate_ms": 536.5247927287036,
+          "control_ms": 550.3724910703927
+        },
+        {
+          "candidate_ms": 542.0884658476227,
+          "control_ms": 552.6511507003113
+        },
+        {
+          "candidate_ms": 538.4124849743438,
+          "control_ms": 555.5818113514443
+        },
+        {
+          "candidate_ms": 540.8517626395909,
+          "control_ms": 543.8684433240878
+        },
+        {
+          "candidate_ms": 541.9633765765329,
+          "control_ms": 552.7585687870561
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-042\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-043",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "-2.559",
+        "bootstrap_ci_low_ms": "-17.681",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "559.932,557.15,554.441,555.523,558.062,557.495,558.854,561.771,559.015,553.703,557.731,553.146",
+        "confidence_ci_width_ms": "15.122",
+        "confidence_decisiveness": "-1.3504",
+        "confidence_margin_ms": "-20.421",
+        "confidence_sign_consistency": "0.8333",
+        "confidence_tier": "weak",
+        "control_median_ms": "548.032",
+        "control_sample_count": "12",
+        "control_samples_ms": "547.178,534.75,555.84,560.4,556.052,554.388,537.499,541.911,543.514,548.885,549.189,545.747",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.740",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "10.097",
+        "median_delta_ms": "-7.971",
+        "naive_k1_first_delta_ms": "-12.754",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-12.7544,-22.4005,1.39979,4.87682,-2.01054,-3.10672,-21.3553,-19.8608,-15.501,-4.81779,-8.54172,-7.39933",
+        "paired_mean_ms": "-9.289",
+        "paired_range_ms": "27.277",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "9.096",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 559.9322648587117,
+          "control_ms": 547.177902151048
+        },
+        {
+          "candidate_ms": 557.1500931905075,
+          "control_ms": 534.7495942126951
+        },
+        {
+          "candidate_ms": 554.4406474402477,
+          "control_ms": 555.8404393480936
+        },
+        {
+          "candidate_ms": 555.5234452111961,
+          "control_ms": 560.4002672568931
+        },
+        {
+          "candidate_ms": 558.0621800721693,
+          "control_ms": 556.0516424792668
+        },
+        {
+          "candidate_ms": 557.4946310615202,
+          "control_ms": 554.387915883808
+        },
+        {
+          "candidate_ms": 558.8540640611121,
+          "control_ms": 537.4987419544129
+        },
+        {
+          "candidate_ms": 561.7713792795049,
+          "control_ms": 541.9105911976566
+        },
+        {
+          "candidate_ms": 559.0147203453163,
+          "control_ms": 543.5137678847808
+        },
+        {
+          "candidate_ms": 553.7032361538586,
+          "control_ms": 548.8854511464687
+        },
+        {
+          "candidate_ms": 557.7310939398344,
+          "control_ms": 549.1893753435355
+        },
+        {
+          "candidate_ms": 553.1463009201306,
+          "control_ms": 545.746968552027
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-043\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-044",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "27.665",
+        "bootstrap_ci_low_ms": "9.875",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "534.553,543.704,552.099,516.359,535.252,543.138,534.302,541.094,548.443,525.33,533.211,533.273",
+        "confidence_ci_width_ms": "17.790",
+        "confidence_decisiveness": "0.3990",
+        "confidence_margin_ms": "7.099",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "555.144",
+        "control_sample_count": "12",
+        "control_samples_ms": "565.717,565.695,558.543,545.24,557.528,545.626,567.855,555.113,555.175,551.778,549.231,546.29",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.776",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "11.155",
+        "median_delta_ms": "19.006",
+        "naive_k1_first_delta_ms": "31.163",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "31.1633,21.9911,6.4438,28.8806,22.276,2.48804,33.5532,14.0184,6.73206,26.4487,16.0201,13.0174",
+        "paired_mean_ms": "18.586",
+        "paired_range_ms": "31.065",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "10.361",
+        "permutation_p_value": "0.006997",
+        "power_at_observed_effect": "0.9997",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 534.5534509609917,
+          "control_ms": 565.7167271217223
+        },
+        {
+          "candidate_ms": 543.7039448669626,
+          "control_ms": 565.6950332467505
+        },
+        {
+          "candidate_ms": 552.0990362409655,
+          "control_ms": 558.5428367084153
+        },
+        {
+          "candidate_ms": 516.3592613856337,
+          "control_ms": 545.2398749974631
+        },
+        {
+          "candidate_ms": 535.2523950891098,
+          "control_ms": 557.5284115432354
+        },
+        {
+          "candidate_ms": 543.1378376886356,
+          "control_ms": 545.6258776025663
+        },
+        {
+          "candidate_ms": 534.3021940183296,
+          "control_ms": 567.8553776811746
+        },
+        {
+          "candidate_ms": 541.0940529945836,
+          "control_ms": 555.1125011044155
+        },
+        {
+          "candidate_ms": 548.4426924945741,
+          "control_ms": 555.1747574879877
+        },
+        {
+          "candidate_ms": 525.3296820259371,
+          "control_ms": 551.7783887260538
+        },
+        {
+          "candidate_ms": 533.2108778477485,
+          "control_ms": 549.2309608014334
+        },
+        {
+          "candidate_ms": 533.2726662233767,
+          "control_ms": 546.2900318065424
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-044\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-045",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "-5.873",
+        "bootstrap_ci_low_ms": "-23.022",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "564.977,546.815,553.12,576.851,557.388,550.198,574.204,567.881,564.262,577.19,551.022,533.854",
+        "confidence_ci_width_ms": "17.149",
+        "confidence_decisiveness": "-1.5014",
+        "confidence_margin_ms": "-25.747",
+        "confidence_sign_consistency": "0.8333",
+        "confidence_tier": "weak",
+        "control_median_ms": "545.035",
+        "control_sample_count": "12",
+        "control_samples_ms": "542.07,545.16,560.328,559.595,526.787,540.108,533.207,544.91,549.983,554.118,539.542,567.821",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.725",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "18.464",
+        "median_delta_ms": "-15.767",
+        "naive_k1_first_delta_ms": "-22.907",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-22.9067,-1.65502,7.20736,-17.2552,-30.6002,-10.0906,-40.9971,-22.9717,-14.2791,-23.0721,-11.48,33.9672",
+        "paired_mean_ms": "-12.844",
+        "paired_range_ms": "74.964",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "19.460",
+        "permutation_p_value": "0.986007",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 564.9771853130802,
+          "control_ms": 542.0704754648538
+        },
+        {
+          "candidate_ms": 546.8149750678824,
+          "control_ms": 545.1599568801931
+        },
+        {
+          "candidate_ms": 553.1203204558178,
+          "control_ms": 560.3276847082744
+        },
+        {
+          "candidate_ms": 576.8505315326917,
+          "control_ms": 559.5953711953399
+        },
+        {
+          "candidate_ms": 557.3875614762579,
+          "control_ms": 526.7873947522872
+        },
+        {
+          "candidate_ms": 550.1981471922978,
+          "control_ms": 540.1075338111449
+        },
+        {
+          "candidate_ms": 574.2042342454073,
+          "control_ms": 533.207157179716
+        },
+        {
+          "candidate_ms": 567.8814509093058,
+          "control_ms": 544.9097808769873
+        },
+        {
+          "candidate_ms": 564.2619418209878,
+          "control_ms": 549.9828016676072
+        },
+        {
+          "candidate_ms": 577.1898353179438,
+          "control_ms": 554.1176862801893
+        },
+        {
+          "candidate_ms": 551.022454418573,
+          "control_ms": 539.5424061048091
+        },
+        {
+          "candidate_ms": 533.8539879104136,
+          "control_ms": 567.8212058251798
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-045\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-046",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "27.991",
+        "bootstrap_ci_low_ms": "-26.221",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "551.786,548.595,572.489,551.655,551.45,524.291,543.394,506.247,540.234,550.984,594.236,502.589",
+        "confidence_ci_width_ms": "54.211",
+        "confidence_decisiveness": "-0.5339",
+        "confidence_margin_ms": "-28.943",
+        "confidence_sign_consistency": "0.5833",
+        "confidence_tier": "weak",
+        "control_median_ms": "544.546",
+        "control_sample_count": "12",
+        "control_samples_ms": "542.755,520.681,532.279,527.128,571.67,560.053,549.411,548.663,519.509,538.391,555.443,546.338",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.723",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "27.774",
+        "median_delta_ms": "-10.812",
+        "naive_k1_first_delta_ms": "-9.031",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-9.03095,-27.9139,-40.2098,-24.5272,20.2194,35.762,6.01665,42.4155,-20.7257,-12.5931,-38.7933,43.749",
+        "paired_mean_ms": "-2.136",
+        "paired_range_ms": "83.959",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "30.976",
+        "permutation_p_value": "0.772114",
+        "power_at_observed_effect": "0.0003",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 551.785824027874,
+          "control_ms": 542.7548720023511
+        },
+        {
+          "candidate_ms": 548.5946646879137,
+          "control_ms": 520.6807421859253
+        },
+        {
+          "candidate_ms": 572.4890651191398,
+          "control_ms": 532.2792711435283
+        },
+        {
+          "candidate_ms": 551.6548685702408,
+          "control_ms": 527.1276410478469
+        },
+        {
+          "candidate_ms": 551.4502179337651,
+          "control_ms": 571.6696612214236
+        },
+        {
+          "candidate_ms": 524.2911898453193,
+          "control_ms": 560.0532128270571
+        },
+        {
+          "candidate_ms": 543.3941352476995,
+          "control_ms": 549.4107877203261
+        },
+        {
+          "candidate_ms": 506.2474671448891,
+          "control_ms": 548.6630109399548
+        },
+        {
+          "candidate_ms": 540.2344416349783,
+          "control_ms": 519.5087492117813
+        },
+        {
+          "candidate_ms": 550.9844387275384,
+          "control_ms": 538.3913861005279
+        },
+        {
+          "candidate_ms": 594.2360755611766,
+          "control_ms": 555.4427412239204
+        },
+        {
+          "candidate_ms": 502.58859420278145,
+          "control_ms": 546.3375796888796
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-046\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-047",
+      "depth": 12,
+      "expected": {
+        "bootstrap_ci_high_ms": "1.758",
+        "bootstrap_ci_low_ms": "-73.648",
+        "candidate_sample_count": "12",
+        "candidate_samples_ms": "551.139,599.02,545.202,623.128,594.938,600.644,545.904,578.372,536.877,612.517,606.994,533.163",
+        "confidence_ci_width_ms": "75.406",
+        "confidence_decisiveness": "-1.0130",
+        "confidence_margin_ms": "-76.383",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "547.034",
+        "control_sample_count": "12",
+        "control_samples_ms": "530.936,518.579,580.466,545.83,548.239,564.364,525.644,550.705,560.596,525.765,536.997,563.538",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.735",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "37.975",
+        "median_delta_ms": "-31.973",
+        "naive_k1_first_delta_ms": "-20.203",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-20.2034,-80.4408,35.2638,-77.298,-46.6992,-36.2801,-20.2604,-27.6662,23.7195,-86.7511,-69.9972,30.3753",
+        "paired_mean_ms": "-31.353",
+        "paired_range_ms": "122.015",
+        "paired_sample_count": "12",
+        "paired_stdev_ms": "43.573",
+        "permutation_p_value": "0.967016",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 551.1394921829988,
+          "control_ms": 530.936068868544
+        },
+        {
+          "candidate_ms": 599.0196030027181,
+          "control_ms": 518.5787894731283
+        },
+        {
+          "candidate_ms": 545.2022812084722,
+          "control_ms": 580.4660877951505
+        },
+        {
+          "candidate_ms": 623.1283967761249,
+          "control_ms": 545.8304279345887
+        },
+        {
+          "candidate_ms": 594.9376997892648,
+          "control_ms": 548.2385043425479
+        },
+        {
+          "candidate_ms": 600.6444009932284,
+          "control_ms": 564.36428140593
+        },
+        {
+          "candidate_ms": 545.9039142253478,
+          "control_ms": 525.6435283068021
+        },
+        {
+          "candidate_ms": 578.371561280412,
+          "control_ms": 550.7053386375939
+        },
+        {
+          "candidate_ms": 536.8765777253803,
+          "control_ms": 560.5960955917137
+        },
+        {
+          "candidate_ms": 612.5165421296342,
+          "control_ms": 525.7654278848499
+        },
+        {
+          "candidate_ms": 606.9937517012282,
+          "control_ms": 536.9965415976191
+        },
+        {
+          "candidate_ms": 533.1627182753468,
+          "control_ms": 563.538048306466
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-047\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":12,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8,9,10,11,12],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m12\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-048",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "21.058",
+        "bootstrap_ci_low_ms": "1.119",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "535.019,534.075,535.743,533.971",
+        "confidence_ci_width_ms": "19.939",
+        "confidence_decisiveness": "-0.0809",
+        "confidence_margin_ms": "-1.614",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "546.580",
+        "control_sample_count": "4",
+        "control_samples_ms": "549.589,555.133,536.862,543.57",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.733",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "14.512",
+        "median_delta_ms": "12.084",
+        "naive_k1_first_delta_ms": "14.570",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "14.5703,21.0579,1.11892,9.59849",
+        "paired_mean_ms": "11.586",
+        "paired_range_ms": "19.939",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "8.409",
+        "permutation_p_value": "0.120940",
+        "power_at_observed_effect": "0.6042",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 535.0190201049977,
+          "control_ms": 549.5893357729509
+        },
+        {
+          "candidate_ms": 534.0749376402948,
+          "control_ms": 555.132811952907
+        },
+        {
+          "candidate_ms": 535.7428188175339,
+          "control_ms": 536.8617377086422
+        },
+        {
+          "candidate_ms": 533.9712526423519,
+          "control_ms": 543.5697434945238
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-048\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-049",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-4.770",
+        "bootstrap_ci_low_ms": "-20.139",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "561.701,559.932,560.527,560.612",
+        "confidence_ci_width_ms": "15.369",
+        "confidence_decisiveness": "-1.4893",
+        "confidence_margin_ms": "-22.888",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.806",
+        "control_sample_count": "4",
+        "control_samples_ms": "541.562,555.162,553.052,546.56",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.749",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "12.406",
+        "median_delta_ms": "-10.764",
+        "naive_k1_first_delta_ms": "-20.139",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-20.139,-4.77021,-7.47514,-14.052",
+        "paired_mean_ms": "-11.609",
+        "paired_range_ms": "15.369",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "6.894",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 561.701148610136,
+          "control_ms": 541.5621614131522
+        },
+        {
+          "candidate_ms": 559.9321161463813,
+          "control_ms": 555.1619068998793
+        },
+        {
+          "candidate_ms": 560.5269783513154,
+          "control_ms": 553.0518376524075
+        },
+        {
+          "candidate_ms": 560.6123391400806,
+          "control_ms": 546.5603737107617
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-049\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-050",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "20.953",
+        "bootstrap_ci_low_ms": "10.755",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "534.735,534.812,534.831,534.648",
+        "confidence_ci_width_ms": "10.197",
+        "confidence_decisiveness": "0.7842",
+        "confidence_margin_ms": "7.997",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "551.672",
+        "control_sample_count": "4",
+        "control_samples_ms": "555.687,549.685,545.586,553.659",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.758",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "9.113",
+        "median_delta_ms": "16.942",
+        "naive_k1_first_delta_ms": "20.953",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "20.9525,14.8725,10.7552,19.0119",
+        "paired_mean_ms": "16.398",
+        "paired_range_ms": "10.197",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "4.537",
+        "permutation_p_value": "0.122939",
+        "power_at_observed_effect": "1.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 534.7348382835211,
+          "control_ms": 555.687386262884
+        },
+        {
+          "candidate_ms": 534.8124869639312,
+          "control_ms": 549.684995313322
+        },
+        {
+          "candidate_ms": 534.8313069212713,
+          "control_ms": 545.5864982428606
+        },
+        {
+          "candidate_ms": 534.6475597908768,
+          "control_ms": 553.6594568405022
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-050\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-051",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "-5.151",
+        "bootstrap_ci_low_ms": "-15.455",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "560.986,559.193,558.677,560.956",
+        "confidence_ci_width_ms": "10.304",
+        "confidence_decisiveness": "-1.7676",
+        "confidence_margin_ms": "-18.213",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "551.643",
+        "control_sample_count": "4",
+        "control_samples_ms": "555.574,543.738,553.526,549.76",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.758",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "9.706",
+        "median_delta_ms": "-8.305",
+        "naive_k1_first_delta_ms": "-5.413",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-5.4129,-15.4553,-5.15145,-11.1962",
+        "paired_mean_ms": "-9.304",
+        "paired_range_ms": "10.304",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "4.960",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 560.9864570398677,
+          "control_ms": 555.5735618849221
+        },
+        {
+          "candidate_ms": 559.1933355855231,
+          "control_ms": 543.7380712039879
+        },
+        {
+          "candidate_ms": 558.6769673966011,
+          "control_ms": 553.525513154172
+        },
+        {
+          "candidate_ms": 560.9559017066262,
+          "control_ms": 549.7597195502892
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-051\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-052",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "8.388",
+        "bootstrap_ci_low_ms": "-24.795",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "541.154,556.554,543.199,537.989",
+        "confidence_ci_width_ms": "33.183",
+        "confidence_decisiveness": "-0.8278",
+        "confidence_margin_ms": "-27.468",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "534.459",
+        "control_sample_count": "4",
+        "control_samples_ms": "534.971,531.759,533.947,546.377",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.672",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "21.734",
+        "median_delta_ms": "-7.718",
+        "naive_k1_first_delta_ms": "-6.183",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-6.1829,-24.7954,-9.25218,8.3878",
+        "paired_mean_ms": "-7.961",
+        "paired_range_ms": "33.183",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "13.608",
+        "permutation_p_value": "0.869565",
+        "power_at_observed_effect": "0.0002",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 541.1542662746647,
+          "control_ms": 534.9713671974126
+        },
+        {
+          "candidate_ms": 556.5544183263283,
+          "control_ms": 531.7590235252021
+        },
+        {
+          "candidate_ms": 543.1992241411542,
+          "control_ms": 533.9470454569229
+        },
+        {
+          "candidate_ms": 537.9893082423287,
+          "control_ms": 546.3771084426858
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-052\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-053",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "22.969",
+        "bootstrap_ci_low_ms": "-30.028",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "555.126,549.563,556.421,560.421",
+        "confidence_ci_width_ms": "52.997",
+        "confidence_decisiveness": "-0.6194",
+        "confidence_margin_ms": "-32.825",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "559.293",
+        "control_sample_count": "4",
+        "control_samples_ms": "563.562,555.025,579.389,530.393",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.796",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "34.313",
+        "median_delta_ms": "6.949",
+        "naive_k1_first_delta_ms": "8.436",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "8.4364,5.46239,22.9687,-30.0284",
+        "paired_mean_ms": "1.710",
+        "paired_range_ms": "52.997",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "22.499",
+        "permutation_p_value": "0.396802",
+        "power_at_observed_effect": "0.0558",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 555.1256217509548,
+          "control_ms": 563.5620215016002
+        },
+        {
+          "candidate_ms": 549.5625281237355,
+          "control_ms": 555.0249202154461
+        },
+        {
+          "candidate_ms": 556.4205798949802,
+          "control_ms": 579.3892570733517
+        },
+        {
+          "candidate_ms": 560.4211792637536,
+          "control_ms": 530.3928069784027
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-053\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-054",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "45.577",
+        "bootstrap_ci_low_ms": "0.922",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "572.101,531.428,511.841,538.512",
+        "confidence_ci_width_ms": "44.655",
+        "confidence_decisiveness": "-0.0409",
+        "confidence_margin_ms": "-1.825",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.487",
+        "control_sample_count": "4",
+        "control_samples_ms": "586.356,532.35,557.418,541.556",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.747",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "31.603",
+        "median_delta_ms": "8.649",
+        "naive_k1_first_delta_ms": "14.254",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "14.2543,0.922345,45.5769,3.04449",
+        "paired_mean_ms": "15.950",
+        "paired_range_ms": "44.655",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "20.599",
+        "permutation_p_value": "0.124938",
+        "power_at_observed_effect": "0.0827",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 572.101479265461,
+          "control_ms": 586.355782903796
+        },
+        {
+          "candidate_ms": 531.4276901526472,
+          "control_ms": 532.3500349241126
+        },
+        {
+          "candidate_ms": 511.8408869856244,
+          "control_ms": 557.4178322205371
+        },
+        {
+          "candidate_ms": 538.5118402033316,
+          "control_ms": 541.5563285816326
+        }
+      ],
+      "screening_only": true,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-054\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-055",
+      "depth": 4,
+      "expected": {
+        "bootstrap_ci_high_ms": "36.207",
+        "bootstrap_ci_low_ms": "-57.969",
+        "candidate_sample_count": "4",
+        "candidate_samples_ms": "560.547,530.661,591.322,567.052",
+        "confidence_ci_width_ms": "94.176",
+        "confidence_decisiveness": "-0.6446",
+        "confidence_margin_ms": "-60.709",
+        "confidence_sign_consistency": "0.7500",
+        "confidence_tier": "weak",
+        "control_median_ms": "547.954",
+        "control_sample_count": "4",
+        "control_samples_ms": "524.844,566.868,533.353,562.555",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.740",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "59.964",
+        "median_delta_ms": "-20.100",
+        "naive_k1_first_delta_ms": "-35.703",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-35.7033,36.2069,-57.969,-4.49719",
+        "paired_mean_ms": "-15.491",
+        "paired_range_ms": "94.176",
+        "paired_sample_count": "4",
+        "paired_stdev_ms": "40.851",
+        "permutation_p_value": "0.807096",
+        "power_at_observed_effect": "0.0010",
+        "raw_verdict": "neutral",
+        "sign_min": "0.900",
+        "verdict": "screening_only"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 560.5472884490051,
+          "control_ms": 524.8439532761926
+        },
+        {
+          "candidate_ms": 530.6606209723153,
+          "control_ms": 566.8675232930872
+        },
+        {
+          "candidate_ms": 591.3220838958683,
+          "control_ms": 533.3530729440786
+        },
+        {
+          "candidate_ms": 567.0516906542639,
+          "control_ms": 562.5545016223023
+        }
+      ],
+      "screening_only": true,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-055\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":4,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m4\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-056",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "15.648",
+        "bootstrap_ci_low_ms": "4.505",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "542.995,540.459,541.385,540.857,540.678,539.964,542.112,540.701",
+        "confidence_ci_width_ms": "11.143",
+        "confidence_decisiveness": "0.1582",
+        "confidence_margin_ms": "1.763",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "548.317",
+        "control_sample_count": "8",
+        "control_samples_ms": "562.759,548.257,545.187,544.662,548.377,551.496,547.355,556.777",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.742",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "8.564",
+        "median_delta_ms": "7.748",
+        "naive_k1_first_delta_ms": "19.764",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "19.7641,7.79835,3.80169,3.80492,7.69849,11.5322,5.24355,16.0757",
+        "paired_mean_ms": "9.465",
+        "paired_range_ms": "15.962",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "5.878",
+        "permutation_p_value": "0.030485",
+        "power_at_observed_effect": "0.6733",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 542.9951859003392,
+          "control_ms": 562.7592702158365
+        },
+        {
+          "candidate_ms": 540.4585958243237,
+          "control_ms": 548.2569420639397
+        },
+        {
+          "candidate_ms": 541.3851293397773,
+          "control_ms": 545.1868223322399
+        },
+        {
+          "candidate_ms": 540.8574942802697,
+          "control_ms": 544.6624173391893
+        },
+        {
+          "candidate_ms": 540.6783078688093,
+          "control_ms": 548.3767975911205
+        },
+        {
+          "candidate_ms": 539.9638784179525,
+          "control_ms": 551.4960611042358
+        },
+        {
+          "candidate_ms": 542.1116836898306,
+          "control_ms": 547.3552308976756
+        },
+        {
+          "candidate_ms": 540.7009621582914,
+          "control_ms": 556.776676856486
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-056\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-057",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-3.384",
+        "bootstrap_ci_low_ms": "-11.559",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "560.783,559.946,560.457,560.211,559.153,560.082,560.778,559.997",
+        "confidence_ci_width_ms": "8.175",
+        "confidence_decisiveness": "-1.7499",
+        "confidence_margin_ms": "-14.305",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "weak",
+        "control_median_ms": "549.219",
+        "control_sample_count": "8",
+        "control_samples_ms": "549.186,550.563,549.243,556.826,548.302,548.561,549.196,568.43",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.746",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "9.738",
+        "median_delta_ms": "-11.033",
+        "naive_k1_first_delta_ms": "-11.598",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-11.5978,-9.38256,-11.2144,-3.38445,-10.8509,-11.5208,-11.5826,8.43257",
+        "paired_mean_ms": "-7.638",
+        "paired_range_ms": "20.030",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "7.059",
+        "permutation_p_value": "1.000000",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "none",
+      "pairs": [
+        {
+          "candidate_ms": 560.7833695544465,
+          "control_ms": 549.185576408861
+        },
+        {
+          "candidate_ms": 559.9457413577381,
+          "control_ms": 550.5631849904453
+        },
+        {
+          "candidate_ms": 560.4572326857391,
+          "control_ms": 549.2428146897621
+        },
+        {
+          "candidate_ms": 560.2107286570412,
+          "control_ms": 556.8262789425652
+        },
+        {
+          "candidate_ms": 559.1525400390022,
+          "control_ms": 548.3016359985461
+        },
+        {
+          "candidate_ms": 560.0815790788583,
+          "control_ms": 548.5607544483195
+        },
+        {
+          "candidate_ms": 560.7784464717541,
+          "control_ms": 549.1958070586447
+        },
+        {
+          "candidate_ms": 559.9970935881682,
+          "control_ms": 568.4296642175195
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-057\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-058",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "22.088",
+        "bootstrap_ci_low_ms": "5.656",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "535.393,534.222,534.225,534.091,534.751,533.383,535.872,535.404",
+        "confidence_ci_width_ms": "16.432",
+        "confidence_decisiveness": "0.1765",
+        "confidence_margin_ms": "2.900",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "marginal",
+        "control_median_ms": "551.343",
+        "control_sample_count": "8",
+        "control_samples_ms": "547.496,556.31,533.221,539.747,560.424,550.371,553.037,552.315",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.757",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "11.341",
+        "median_delta_ms": "16.950",
+        "naive_k1_first_delta_ms": "12.103",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "12.1033,22.0884,-1.00361,5.65649,25.6722,16.9882,17.1647,16.9112",
+        "paired_mean_ms": "14.448",
+        "paired_range_ms": "26.676",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "8.667",
+        "permutation_p_value": "0.035482",
+        "power_at_observed_effect": "0.9962",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 535.3927482076105,
+          "control_ms": 547.4960856929041
+        },
+        {
+          "candidate_ms": 534.2215581692906,
+          "control_ms": 556.3099380405189
+        },
+        {
+          "candidate_ms": 534.2247342879666,
+          "control_ms": 533.221120801679
+        },
+        {
+          "candidate_ms": 534.0908496864167,
+          "control_ms": 539.747343087051
+        },
+        {
+          "candidate_ms": 534.7514624346275,
+          "control_ms": 560.4236677972551
+        },
+        {
+          "candidate_ms": 533.3827791005532,
+          "control_ms": 550.3709514856674
+        },
+        {
+          "candidate_ms": 535.8718482745631,
+          "control_ms": 553.036563882956
+        },
+        {
+          "candidate_ms": 535.4041513184663,
+          "control_ms": 552.315335955137
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-058\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-059",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-3.392",
+        "bootstrap_ci_low_ms": "-13.555",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "557.903,560.86,558.216,560.359,557.227,557.784,559.27,561.156",
+        "confidence_ci_width_ms": "10.163",
+        "confidence_decisiveness": "-1.6056",
+        "confidence_margin_ms": "-16.318",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "weak",
+        "control_median_ms": "552.637",
+        "control_sample_count": "8",
+        "control_samples_ms": "544.91,547.305,551.786,534.005,572.401,554.392,553.488,555.317",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.763",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "14.363",
+        "median_delta_ms": "-6.135",
+        "naive_k1_first_delta_ms": "-12.993",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-12.9934,-13.5549,-6.43076,-26.354,15.1735,-3.39174,-5.782,-5.83907",
+        "paired_mean_ms": "-7.397",
+        "paired_range_ms": "41.527",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "11.711",
+        "permutation_p_value": "0.935032",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "low",
+      "pairs": [
+        {
+          "candidate_ms": 557.9033085021509,
+          "control_ms": 544.9099359362178
+        },
+        {
+          "candidate_ms": 560.8596166679813,
+          "control_ms": 547.304687836149
+        },
+        {
+          "candidate_ms": 558.2163348186374,
+          "control_ms": 551.7855739567633
+        },
+        {
+          "candidate_ms": 560.3586595279804,
+          "control_ms": 534.0046993052994
+        },
+        {
+          "candidate_ms": 557.2272635919021,
+          "control_ms": 572.4007284295583
+        },
+        {
+          "candidate_ms": 557.7840639519671,
+          "control_ms": 554.3923215146293
+        },
+        {
+          "candidate_ms": 559.2697859526945,
+          "control_ms": 553.4877862573929
+        },
+        {
+          "candidate_ms": 561.1559998065579,
+          "control_ms": 555.3169313258185
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-059\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-060",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "26.846",
+        "bootstrap_ci_low_ms": "11.049",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "528.319,533.949,534.829,527.562,533.199,530.331,550.786,541.561",
+        "confidence_ci_width_ms": "15.796",
+        "confidence_decisiveness": "0.5247",
+        "confidence_margin_ms": "8.288",
+        "confidence_sign_consistency": "1.0000",
+        "confidence_tier": "marginal",
+        "control_median_ms": "552.275",
+        "control_sample_count": "8",
+        "control_samples_ms": "555.164,572.645,551.798,538.611,544.935,543.859,556.302,552.752",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.761",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "13.406",
+        "median_delta_ms": "12.632",
+        "naive_k1_first_delta_ms": "26.846",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "26.8456,38.6964,16.9685,11.0494,11.7357,13.5285,5.51518,11.1906",
+        "paired_mean_ms": "16.941",
+        "paired_range_ms": "33.181",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "10.747",
+        "permutation_p_value": "0.032484",
+        "power_at_observed_effect": "0.7382",
+        "raw_verdict": "accepted_noisy_single",
+        "sign_min": "0.900",
+        "verdict": "accepted_noisy_single"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 528.3187877396878,
+          "control_ms": 555.1643722974153
+        },
+        {
+          "candidate_ms": 533.9488413040218,
+          "control_ms": 572.6452396101074
+        },
+        {
+          "candidate_ms": 534.8292809084953,
+          "control_ms": 551.7977821449036
+        },
+        {
+          "candidate_ms": 527.5618395711199,
+          "control_ms": 538.6112265316516
+        },
+        {
+          "candidate_ms": 533.1991786407015,
+          "control_ms": 544.9349146557265
+        },
+        {
+          "candidate_ms": 530.3307123456659,
+          "control_ms": 543.8591646379681
+        },
+        {
+          "candidate_ms": 550.7864911474251,
+          "control_ms": 556.3016712592186
+        },
+        {
+          "candidate_ms": 541.5613460334109,
+          "control_ms": 552.7519848305718
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-060\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-061",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "-6.543",
+        "bootstrap_ci_low_ms": "-26.025",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "569.675,573.044,543.364,564.694,572.476,559.491,577.813,558.995",
+        "confidence_ci_width_ms": "19.481",
+        "confidence_decisiveness": "-1.4771",
+        "confidence_margin_ms": "-28.775",
+        "confidence_sign_consistency": "0.8750",
+        "confidence_tier": "weak",
+        "control_median_ms": "550.004",
+        "control_sample_count": "8",
+        "control_samples_ms": "545.24,554.689,568.399,539.31,528.177,548.219,551.789,552.451",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.750",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "22.773",
+        "median_delta_ms": "-21.395",
+        "naive_k1_first_delta_ms": "-24.435",
+        "naive_k1_would_accept": "false",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "-24.4351,-18.3554,25.0349,-25.3837,-44.2988,-11.2726,-26.0245,-6.54344",
+        "paired_mean_ms": "-16.410",
+        "paired_range_ms": "69.334",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "20.214",
+        "permutation_p_value": "0.953023",
+        "power_at_observed_effect": "0.0000",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "medium",
+      "pairs": [
+        {
+          "candidate_ms": 569.6753616685453,
+          "control_ms": 545.2402543446643
+        },
+        {
+          "candidate_ms": 573.0443147917247,
+          "control_ms": 554.6888652920394
+        },
+        {
+          "candidate_ms": 543.3640614569854,
+          "control_ms": 568.3989973597743
+        },
+        {
+          "candidate_ms": 564.6940243193916,
+          "control_ms": 539.3102768869255
+        },
+        {
+          "candidate_ms": 572.4759239968398,
+          "control_ms": 528.1770897478914
+        },
+        {
+          "candidate_ms": 559.4914407129157,
+          "control_ms": 548.218813397318
+        },
+        {
+          "candidate_ms": 577.8131336462102,
+          "control_ms": 551.788589059215
+        },
+        {
+          "candidate_ms": 558.9945007502554,
+          "control_ms": 552.4510575365824
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-061\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-062",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "43.157",
+        "bootstrap_ci_low_ms": "-31.768",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "446.875,546.185,543.23,585.446,508.87,603.05,569.275,498.199",
+        "confidence_ci_width_ms": "74.925",
+        "confidence_decisiveness": "-0.4603",
+        "confidence_margin_ms": "-34.487",
+        "confidence_sign_consistency": "0.6250",
+        "confidence_tier": "weak",
+        "control_median_ms": "543.799",
+        "control_sample_count": "8",
+        "control_samples_ms": "490.032,532.822,530.908,548.489,539.109,553.143,557.212,557.797",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.719",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "41.359",
+        "median_delta_ms": "-12.193",
+        "naive_k1_first_delta_ms": "43.157",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "43.1566,-13.3631,-12.3227,-36.9572,30.2394,-49.9067,-12.0628,59.5982",
+        "paired_mean_ms": "1.048",
+        "paired_range_ms": "109.505",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "39.010",
+        "permutation_p_value": "0.709645",
+        "power_at_observed_effect": "0.0012",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 446.87520873254437,
+          "control_ms": 490.03181121290055
+        },
+        {
+          "candidate_ms": 546.1847130212861,
+          "control_ms": 532.8215765140174
+        },
+        {
+          "candidate_ms": 543.2304397129519,
+          "control_ms": 530.9077492711672
+        },
+        {
+          "candidate_ms": 585.4457305046483,
+          "control_ms": 548.4885638550849
+        },
+        {
+          "candidate_ms": 508.86980703952236,
+          "control_ms": 539.109212766296
+        },
+        {
+          "candidate_ms": 603.0496169855313,
+          "control_ms": 553.142922645796
+        },
+        {
+          "candidate_ms": 569.2749120344865,
+          "control_ms": 557.212103895593
+        },
+        {
+          "candidate_ms": 498.19869070025493,
+          "control_ms": 557.7968583787185
+        }
+      ],
+      "screening_only": false,
+      "sign": "positive",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-062\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    },
+    {
+      "case_id": "judge-differential-063",
+      "depth": 8,
+      "expected": {
+        "bootstrap_ci_high_ms": "29.923",
+        "bootstrap_ci_low_ms": "-21.332",
+        "candidate_sample_count": "8",
+        "candidate_samples_ms": "505.685,574.162,534.608,571.411,542.707,585.083,581.443,558.144",
+        "confidence_ci_width_ms": "51.255",
+        "confidence_decisiveness": "-0.4712",
+        "confidence_margin_ms": "-24.150",
+        "confidence_sign_consistency": "0.5000",
+        "confidence_tier": "weak",
+        "control_median_ms": "563.422",
+        "control_sample_count": "8",
+        "control_samples_ms": "506.608,563.094,573.336,559.43,572.63,563.751,586.387,516.155",
+        "decisive_k": "1.000",
+        "delta_min_ms_used": "2.817",
+        "escalation_steps": "4,8,12",
+        "mde_ms": "28.989",
+        "median_delta_ms": "-5.073",
+        "naive_k1_first_delta_ms": "0.923",
+        "naive_k1_would_accept": "true",
+        "noise_flag": "NOISY",
+        "paired_deltas_ms": "0.922978,-11.0681,38.7279,-11.981,29.9228,-21.3324,4.94343,-41.9892",
+        "paired_mean_ms": "-1.482",
+        "paired_range_ms": "80.717",
+        "paired_sample_count": "8",
+        "paired_stdev_ms": "26.423",
+        "permutation_p_value": "0.689655",
+        "power_at_observed_effect": "0.0025",
+        "raw_verdict": "rejected",
+        "sign_min": "0.900",
+        "verdict": "rejected"
+      },
+      "noise": "high",
+      "pairs": [
+        {
+          "candidate_ms": 505.6851791935802,
+          "control_ms": 506.6081571190326
+        },
+        {
+          "candidate_ms": 574.161766945615,
+          "control_ms": 563.093699294232
+        },
+        {
+          "candidate_ms": 534.6080755406823,
+          "control_ms": 573.3359425384414
+        },
+        {
+          "candidate_ms": 571.4113117317582,
+          "control_ms": 559.4303221634589
+        },
+        {
+          "candidate_ms": 542.7070723314004,
+          "control_ms": 572.6298654097707
+        },
+        {
+          "candidate_ms": 585.0833767998936,
+          "control_ms": 563.7509287130372
+        },
+        {
+          "candidate_ms": 581.4431431409821,
+          "control_ms": 586.3865755576716
+        },
+        {
+          "candidate_ms": 558.1443236955477,
+          "control_ms": 516.1550992574707
+        }
+      ],
+      "screening_only": false,
+      "sign": "negative",
+      "verdict_context": "{\"candidate_id\":\"judge-differential-063\",\"control_commit\":\"407c905e45ad75fc29bf0f9bb7c5c2fd3475976f\",\"depth\":8,\"manifest_sha256\":\"3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f\",\"pair_index\":[1,2,3,4,5,6,7,8],\"run_order_seed\":\"d655499d6f8d89f0d30b5da6eb68b4830bbb564843d9bd2cb142789a3db089bd\",\"stage\":\"m8\",\"study_id\":\"fmt-public-preregistration-v1\"}"
+    }
+  ],
+  "depths": [
+    4,
+    8,
+    12
+  ],
+  "generator": "recompute_fmt_public_formal.build_judge_differential_cases",
+  "noise_levels": [
+    "none",
+    "low",
+    "medium",
+    "high"
+  ],
+  "original_judge": "scripts/timing_analysis.py summarize_paired_timing + evidence_fields",
+  "public_judge": "frozen_judge_v1.evaluate_stage",
+  "schema": "fmt_public_judge_differential_cases_v1",
+  "seed": 20260902,
+  "signs": [
+    "positive",
+    "negative"
+  ]
+}

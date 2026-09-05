@@ -1,0 +1,72 @@
+{
+  "all_candidate_naive_accepts": 16,
+  "authorization_sha256": "801f6d854d398769ed47cdacf475a52dc43e2044ce37b72b8fbb947d8ce6ab52",
+  "bootstrap_only_false_promotion_details": [
+    {
+      "bootstrap_ci_low_ms": 2.818,
+      "candidate_id": "fmt-011",
+      "permutation_p_value": 0.096952
+    },
+    {
+      "bootstrap_ci_low_ms": 2.573,
+      "candidate_id": "fmt-016",
+      "permutation_p_value": 0.112944
+    }
+  ],
+  "calibration_control_median_ms": 532.686272,
+  "calibration_to_formal_control_median_delta_pct": 3.3390625842897497,
+  "final_manifest_sha256": "3c6e8bb3c13edc73368fedf481a5c0af228e9cfdc0e06323c659b3992b8e3c1f",
+  "formal_real_run_control_median_ms": 550.473,
+  "ledger_sha256": "f1599ac0af4fced42f0cee08a42d89f96a01211a49a0a062fa3a4979d4326afc",
+  "null_denominator": 30,
+  "null_gate_false_promotions": 0,
+  "null_gate_one_sided_95_upper": 0.09503385285530419,
+  "null_naive_false_promotions": 16,
+  "posthoc_analysis_label": "post-hoc exploratory; not preregistered",
+  "posthoc_bootstrap_only_false_promotion_ids": [
+    "fmt-011",
+    "fmt-016"
+  ],
+  "posthoc_bootstrap_only_false_promotions": 2,
+  "posthoc_bootstrap_only_real_accepts": 1,
+  "preflight_jitter_comparison": [
+    {
+      "attempt": 1,
+      "control_cov": 0.13990108345249566,
+      "control_mean_ms": 691.5750482,
+      "control_median_ms": 651.53388,
+      "control_range_ms": 215.18647399999998,
+      "control_range_ratio": 0.33027672175697137,
+      "control_stdev_ms": 91.15029571800828,
+      "decision": "NOISY",
+      "sample_count": 5,
+      "source": "evidence/output/formal/preflight/attempt_01/host_jitter_summary.json"
+    },
+    {
+      "attempt": 2,
+      "control_cov": 0.011564487579181859,
+      "control_mean_ms": 549.4949098,
+      "control_median_ms": 547.874896,
+      "control_range_ms": 15.446237999999994,
+      "control_range_ratio": 0.02819300192940396,
+      "control_stdev_ms": 6.335892429737553,
+      "decision": "QUIET",
+      "sample_count": 5,
+      "source": "evidence/output/formal/preflight/attempt_02/host_jitter_summary.json"
+    }
+  ],
+  "real_automatic_promotion_count": 0,
+  "real_bootstrap_ci_high_ms": "58.506",
+  "real_bootstrap_ci_low_ms": "6.368",
+  "real_candidate_count": 1,
+  "real_final_verdict": "accepted_noisy_single",
+  "real_gate_promotions": 0,
+  "real_median_delta_ms": "35.861",
+  "real_naive_accept": false,
+  "real_permutation_p_value": "0.030985",
+  "real_signal_detected_count": 1,
+  "schema": "fmt_formal_independent_recompute_v2",
+  "status": "INDEPENDENT_RECOMPUTE_EXACT_MATCH",
+  "terminal_candidate_count": 31,
+  "usable_null_count": 30
+}

@@ -1,0 +1,152 @@
+{
+  "archive_limits": {
+    "max_depth": 4,
+    "max_member_bytes": 67108864
+  },
+  "content_rule_ids": [
+    "private_windows_path",
+    "private_linux_path",
+    "private_ip",
+    "credential_assignment"
+  ],
+  "content_rules": [
+    {
+      "regex_sha256": "53b88766d1a470f27aaeb16ea940465368cd30558e7fdb9a95e961e8858ebbbd",
+      "rule": "private_windows_path"
+    },
+    {
+      "regex_sha256": "efbc504739d499f709dc3cc94b0d265748474f1387b8cf6dc763398b4300917c",
+      "rule": "private_linux_path"
+    },
+    {
+      "regex_sha256": "34b33cb58588d968fac60454d295c930cf5763a50d0ee9085f7fd97261d3afd1",
+      "rule": "private_ip"
+    },
+    {
+      "regex_sha256": "9551d8b9817f75390429f72aa82b4d22eccb903366b20bf9a4c69dbf22c7fbe9",
+      "rule": "credential_assignment"
+    }
+  ],
+  "file_inventory": {
+    "listed_file_count": 12,
+    "paths": [
+      "README.md",
+      "candidate_evidence.jsonl",
+      "execution_custody.json",
+      "external_consumer_acceptance.md",
+      "frozen_judge_v1.py",
+      "independent_recompute.json",
+      "judge_differential_cases.json",
+      "judge_equivalence.json",
+      "method_result_report.md",
+      "publication_scan.json",
+      "recompute_public.py",
+      "study_binding.json"
+    ],
+    "source": "artifact_inventory.json"
+  },
+  "findings": [],
+  "forbidden_path_parts": [
+    "candidate_workspaces",
+    "control_workspaces",
+    "raw_logs",
+    "runs",
+    "runs_smoke",
+    "runs_smoke_v2"
+  ],
+  "forbidden_source_suffixes": [
+    ".c",
+    ".cc",
+    ".cpp",
+    ".cxx",
+    ".h",
+    ".hh",
+    ".hpp"
+  ],
+  "positive_control": {
+    "probes": [
+      {
+        "detected_rules": [
+          "private_ip"
+        ],
+        "expected_rule": "private_ip",
+        "payload_sha256": "257c0862ca07832a2d6a555a62166b3e79b5e25dd3143a8ba0aef9d6fdba7894",
+        "probe_id": "synthetic_private_ip",
+        "status": "PASS"
+      },
+      {
+        "detected_rules": [
+          "credential_assignment"
+        ],
+        "expected_rule": "credential_assignment",
+        "payload_sha256": "07def487e6b949762cdc225513c446676290c94f176e30fd8dc11ba4d964c88b",
+        "probe_id": "synthetic_credential",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "rule_contract": {
+    "content_rule_count": 4,
+    "rule_definition_sha_count": 12,
+    "rule_id_count": 12,
+    "structural_rule_count": 8
+  },
+  "scanned_file_count": 13,
+  "scanner_module": "scripts/paper_publication_scan.py",
+  "scanner_sha256": "30b8dda79774caf6bf84faddee4db883fc041f38915a9c42b4cad08089d4c3e9",
+  "schema": "fmt_publication_scan_v2",
+  "status": "PASS",
+  "structural_rule_ids": [
+    "archive_member_too_large",
+    "archive_nesting_too_deep",
+    "forbidden_file_type",
+    "forbidden_path",
+    "invalid_archive",
+    "non_utf8_text",
+    "raw_log",
+    "unsafe_archive_path"
+  ],
+  "structural_rules": [
+    {
+      "definition": "archive member bytes > 67108864",
+      "definition_sha256": "d2812fc7ccb3614195d80b0710672d5a14ef48f46051fd0ccc36a3b30175af81",
+      "rule": "archive_member_too_large"
+    },
+    {
+      "definition": "archive nesting depth > 4",
+      "definition_sha256": "90c9d598a99639cfb13aff093851b3b0f8af2050409a03403a181518a6bc9c34",
+      "rule": "archive_nesting_too_deep"
+    },
+    {
+      "definition": "suffix in [\".c\",\".cc\",\".cpp\",\".cxx\",\".h\",\".hh\",\".hpp\"]",
+      "definition_sha256": "ed3f1dfff2993f24cc1f7f053a91676fe30e375883676d516b5c029c59237771",
+      "rule": "forbidden_file_type"
+    },
+    {
+      "definition": "path part in [\"candidate_workspaces\",\"control_workspaces\",\"raw_logs\",\"runs\",\"runs_smoke\",\"runs_smoke_v2\"]",
+      "definition_sha256": "1cfe3bba7bdbf4eb4a403a9637b58271e295f23923ebcfa7c291864d8659f72c",
+      "rule": "forbidden_path"
+    },
+    {
+      "definition": "zipfile.BadZipFile on archive open",
+      "definition_sha256": "c348533dfdc9be9210986007e0d101b4840277dd25f746c84fb1a6e5b07d1390",
+      "rule": "invalid_archive"
+    },
+    {
+      "definition": "UTF-8 decode failure",
+      "definition_sha256": "38377d12df676c498c19b649919fb4851724e28320ee3ee8f11ae7cd0cc94c5e",
+      "rule": "non_utf8_text"
+    },
+    {
+      "definition": "suffix == '.log'",
+      "definition_sha256": "fcb874d99d795c7a0575316b1bd0d166f9904938450e076aa7404642479a934d",
+      "rule": "raw_log"
+    },
+    {
+      "definition": "absolute archive member path, parent traversal, or drive prefix",
+      "definition_sha256": "1c1a7069dfb36dc900497df10037db0f4189e3fc9b7ae902d40e44e9e3cf9b10",
+      "rule": "unsafe_archive_path"
+    }
+  ]
+}
