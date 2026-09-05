@@ -493,6 +493,14 @@ outcomes with a common probability.  Candidates were executed sequentially on
 one host, so 0/30 is the primary unconditional fact.  The interval is a
 model-based summary, not a universal guarantee.
 
+\paragraph{Measurement window.}
+The host-weather gate is a preflight: it classifies five control measurements
+taken before candidate timing and does not monitor the window that follows.  A
+\texttt{QUIET} classification therefore does not establish that the window
+stayed quiet.  This study did not detect, record, or isolate interference
+arriving after a preflight passed, so any such contribution cannot be separated
+from other sources of timing variation.
+
 \paragraph{Order and dependence.}
 Odd pair indices always ran candidate first and even indices always ran control
 first: 0 of \NullPairs{} null pairs violated this mapping.  Arm order is thus
