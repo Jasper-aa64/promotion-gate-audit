@@ -1,0 +1,5 @@
+# This repository is a byte-exact archival artifact: publication_v2 carries
+# SHA-256 custody hashes and a size inventory over LF bytes, and
+# recompute_public.py verifies them. Any line-ending conversion on checkout
+# breaks that verification, so disable it for every path.
+* -text
