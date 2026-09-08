@@ -96,6 +96,7 @@ cd paper_v01/source && pdflatex main && bibtex main && pdflatex main && pdflatex
 | `paper_v01.pdf` | the paper |
 | `paper_v01/source/` | LaTeX source and bibliography |
 | `paper_numbers/` | number reproducer, figure generator, vector figures |
+| `harness/` | curated subset of the generation-and-timing side (see Scope of harness/) |
 | `v2_fmt_public_formal_experiment/publication_v2/` | the frozen public artifact |
 
 The artifact contains typed pair-level evidence for all 31 candidates
@@ -103,6 +104,14 @@ The artifact contains typed pair-level evidence for all 31 candidates
 fixed differential cases, custody and inventory hashes, a self-contained
 recomputer (`recompute_public.py`), and an external-consumer acceptance record.
 See `publication_v2/README.md` for its own manifest.
+
+## Scope of harness/
+
+`harness/` is the side that produces and times candidate patches; the paper
+audits the **decision** side. This is a curated subset, not the full loop —
+the execution scripts that drive the measured binaries are intentionally
+excluded, so this code demonstrates the design but **does not run
+end-to-end**.
 
 ## Provenance
 
