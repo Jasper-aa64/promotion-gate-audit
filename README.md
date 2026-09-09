@@ -129,6 +129,22 @@ the paper.
 Technical report, not peer reviewed. Corrections and replication attempts are
 welcome via issues.
 
+## Version history
+
+- v0.1.1 (tag): initial public release (frozen artifact + paper + number
+  reproducer).
+- Latest (post-v0.1.1): Threats to Validity now quantifies the arm-order
+  confound — candidate-first minus control-first over the pooled 244 null
+  pairs is 5.373 ms in means and 4.733 ms in medians, about 1.972x the median
+  practical-effect threshold the gate applies; the text states plainly that
+  the contrast cannot be attributed to arm order, to position within a run,
+  or to any other time-varying cause. Pervasive noise flagging (all 31
+  candidates `NOISY`) is reported without attributing the dispersion to any
+  source. The number reproducer adds the five A10b checks for these values.
+  The PDF is rebuilt from the same LaTeX source with a deterministic build
+  (`SOURCE_DATE_EPOCH` + `\pdftrailerid{}`);
+  SHA-256: `DC243D91CE661171689A4D8D54C9452CA0AC8C713235E7FC5EB5D3E55DE0B364`.
+
 ## Licensing
 
 This repository uses file-specific licenses; see [LICENSE](LICENSE) for the

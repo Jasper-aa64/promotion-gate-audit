@@ -406,6 +406,36 @@ def main():
     check("A10 real pair exceptions", exc_r, 0,
           "0/8 for the real candidate (reported for completeness)")
 
+    # A10b quantifies how large the unidentifiable contrast actually is.
+    # "Not identifiable" alone does not tell a reader whether the confound is
+    # negligible or comparable to the effects the gate is meant to resolve.
+    import statistics as _st
+    cf = [p["delta_ms"] for r in nulls for p in r["pairs"]
+          if p["arm_order"][0] == "candidate"]
+    tf = [p["delta_ms"] for r in nulls for p in r["pairs"]
+          if p["arm_order"][0] == "control"]
+    check("A10b arm-order group sizes", (len(cf), len(tf)), (122, 122),
+          "the alternating design is balanced across all 244 null pairs")
+    mean_gap = _st.mean(cf) - _st.mean(tf)
+    med_gap = _st.median(cf) - _st.median(tf)
+    check("A10b arm-order mean gap ms", round(mean_gap, 3), 5.373,
+          "pooled candidate-first minus control-first mean null delta; this "
+          "contrast is confounded with pair-index parity and is NOT an "
+          "estimate of an arm-order effect")
+    check("A10b arm-order median gap ms", round(med_gap, 3), 4.733,
+          "same contrast using medians")
+    dmin = _st.median([num(r["final_judge"]["delta_min_ms_used"])
+                       for r in nulls])
+    check("A10b gap / practical-effect threshold", round(mean_gap / dmin, 3),
+          1.972,
+          "the confounded contrast is about twice the median "
+          "delta_min_ms_used, so the limitation is material rather than "
+          "nominal")
+    noisy = sum(1 for r in rows if r["final_judge"]["noise_flag"] == "NOISY")
+    check("A10b noise_flag NOISY count", (noisy, len(rows)), (31, 31),
+          "every candidate carried the NOISY flag; this is a protocol-risk "
+          "signal only and does not attribute the dispersion to any source")
+
     # ---------------------------------------------------------------- A11
     print("\n--- A11 exact one-sided binomial test sizes (sign test, q0=0.5) ---")
     print("     n : threshold c_n | actual size")

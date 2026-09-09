@@ -1,4 +1,5 @@
 \documentclass[10pt]{article}
+\pdftrailerid{}\r
 
 \usepackage[margin=0.82in]{geometry}
 \usepackage{amsmath}
@@ -35,6 +36,10 @@
 \newcommand{\RealSign}{0.875}
 \newcommand{\QMinimumN}{29}
 \newcommand{\DirectCiRatio}{9}
+\newcommand{\ArmOrderMeanGap}{5.373}
+\newcommand{\ArmOrderMedianGap}{4.733}
+\newcommand{\ArmOrderRatio}{1.972}
+\newcommand{\CandidateCount}{31}
 
 \title{Selective Authorization of Automated Performance Patches:\\
 Rule Audit and Case Study of a Frozen Promotion Gate}
@@ -505,6 +510,14 @@ from other sources of timing variation.
 Odd pair indices always ran candidate first and even indices always ran control
 first: 0 of \NullPairs{} null pairs violated this mapping.  Arm order is thus
 perfectly confounded with parity, and an arm-order effect is not identifiable.
+The confounded contrast is not small.  Pooling all \NullPairs{} null pairs,
+the candidate-first mean paired difference exceeds the control-first mean by
+\ArmOrderMeanGap{} ms, and the medians differ by \ArmOrderMedianGap{} ms:
+about \ArmOrderRatio{} times the median practical-effect threshold
+$\delta_{\min}$ that the gate itself applies.  Because arm order and parity
+are collinear, this quantity cannot be attributed to arm order, to position
+within a run, or to any other time-varying cause.  It bounds how much a
+design artifact could matter here; it does not show that one did.
 Future paired studies should randomize or counterbalance arm order independently
 of pair-index parity and record the realized order.
 Post-hoc sequence diagnostics find more sign alternation than a
@@ -512,6 +525,15 @@ within-candidate permutation reference, but lag one was selected after the
 order structure was observed and multiplicity was not controlled.  These
 diagnostics provide exploratory evidence against a naive exchangeability
 interpretation; they neither identify a mechanism nor prove IID failure.
+
+\paragraph{Pervasive noise flagging.}
+The frozen \texttt{noise\_flag} evaluated to \texttt{NOISY} for all
+\CandidateCount{} candidates, including the real one.  This is consistent
+with a balanced alternating design contributing dispersion to every
+candidate, but the study cannot separate such a contribution from host
+variation, workload variation, or any other source.  The flag is reported
+as a protocol-risk signal only: it does not localize the origin of the
+dispersion, and it is not evidence that the frozen judge is inapplicable.
 
 \paragraph{Rule audit.}
 The $n=29$ result is exact only under IID Bernoulli signs.  The 9-fold result is
