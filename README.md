@@ -74,7 +74,7 @@ artifact — it never touches raw execution evidence:
 python paper_numbers/reproduce.py
 ```
 
-Expected: `RESULT: all claims reproduced` (81 checks, exit 0). Requires Python
+Expected: `RESULT: all claims reproduced` (86 checks, exit 0). Requires Python
 3.9+, standard library only.
 
 Regenerate the three figures:
@@ -142,7 +142,9 @@ welcome via issues.
   candidates `NOISY`) is reported without attributing the dispersion to any
   source. The number reproducer adds the five A10b checks for these values.
   The PDF is rebuilt from the same LaTeX source with a deterministic build
-  (`SOURCE_DATE_EPOCH` + `\pdftrailerid{}`);
+  (`SOURCE_DATE_EPOCH` + `\pdftrailerid{}`). The hash reproduces on the
+  same TeX distribution; a different distribution yields different bytes.
+  SHA-256 of the published build:
   SHA-256: `DC243D91CE661171689A4D8D54C9452CA0AC8C713235E7FC5EB5D3E55DE0B364`.
 
 ## Licensing
