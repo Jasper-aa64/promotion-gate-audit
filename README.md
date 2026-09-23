@@ -40,7 +40,7 @@ An implementation agent proposes and repairs patches, another agent reviews the 
 
 **Step 3: Prevent biased estimates.**
 
-- **Run order** is randomized and balanced; in one batch, order alone shifted the gain by about 57 ms.
+- **Run order** is randomized and balanced; in one batch, the two orders gave gains about 57 ms apart.
 - **The measurement environment follows deployment.** Some gains depend on the environment—a change that reduces cache misses may gain differently on a dedicated core than on a shared one—and in the wrong environment more runs only measure the wrong thing more precisely. So measurement is pinned and isolated if production is, and runs under the same shared conditions if the program is deployed on cloud or CI machines.
 - **Selection.** Candidates that pass exploration tend to be the lucky ones, so exploration only selects; the verdict uses fresh confirmation data alone.
 - **Analysis flexibility.** The metric, the threshold and the sample size are fixed before measurement, with no changes or early stopping afterwards.
@@ -66,7 +66,7 @@ An implementation agent proposes and repairs patches, another agent reviews the 
 - **Correctness.** Whether the checks are complete is untested. Next: fuzz the differential-test inputs, and inject known bugs to measure missed bugs and wrongly rejected valid patches.
 - **False acceptance.** How often the pipeline accepts a change with no real benefit is untested. Next: count how often comment-only patches that leave the compiled result unchanged are judged faster.
 - **Budget.** A 30% gain is far above the 1.5–2% this budget can resolve, so the budget went untested. Next: slow the program by a known 1–5% to find the smallest gain a given budget confirms, on pinned machines and in cloud and CI.
-- **Bias.** A first comparison with concurrent runs was inconclusive, and other days are untested. Next: repeat confirmation across days and with concurrent runs; when several candidates compete, confirm the winner on fresh data, with a threshold that tightens as their number grows.
+- **Bias.** On the repaired version, a first comparison with concurrent runs was inconclusive, and other days are untested. Next: repeat confirmation across days and with concurrent runs; when several candidates compete, confirm the winner on fresh data, with a threshold that tightens as their number grows.
 
 Longer term, I want to study whether feeding this evidence back to the agents improves their patches.
 
