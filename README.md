@@ -2,7 +2,7 @@
 
 **Research overview** · Junming Liang, Anhui Normal University · July 2026 – present
 
-📄 [Research overview (PDF, 7 pages)](research_overview.pdf) · [Earlier technical report v0.1 (PDF, 9 pages)](paper_v01.pdf)
+📄 [Research overview (PDF, 8 pages)](research_overview.pdf) · [Earlier technical report v0.1 (PDF, 9 pages)](paper_v01.pdf)
 
 This repository holds my ongoing research on when a performance patch proposed by a coding agent can be accepted. The overview below describes the current evaluation pipeline and its extension to a continuous optimization line, with two cases: a blind test on a public program from a CppCon 2026 talk, where two agents ran the line without seeing the expert's answer, and a line on an in-house market-data callback; the earlier technical report and its frozen, reproducible artifact are documented further down.
 
@@ -18,7 +18,7 @@ This repository holds my ongoing research on when a performance patch proposed b
 - **Estimates can be biased**, wrong in one direction however many runs are made. A candidate that always runs after the baseline may benefit from warm caches; concurrent and sequential runs can give different gains; and a test environment unlike production can mislead. Selection adds more: among 20 useless patches, one or two will look faster by chance, and stopping at the first significant result pushes the error rate far above the nominal 5%.
 - **The budget is limited.** Every extra minute spent on one candidate is a minute not spent on another; the more candidates, the sharper this trade-off.
 
-**Research question.** *When the evaluation budget is limited, what evidence is sufficient to accept an agent-generated performance optimization?* The problem is not unique to my work. [auto_optimization](https://github.com/zjusharkyu/auto_optimization), a public project inspired by Karpathy's autoresearch, lets an agent optimize an order-book program, keeping any change that measures faster than the current best and passes the tests. Five of the seven changes it kept gained only 0.2–0.8% each; its benchmark script configures environment isolation, but no measurement variability is reported, so the records alone cannot confirm these small gains (Figure 1). [Chen et al. (2026)](https://arxiv.org/abs/2607.01211) found that many official reference patches in published agent performance benchmarks, replayed on other machines, do not consistently meet the benchmarks' own validity criteria.
+**Research question.** *When the evaluation budget is limited, what evidence is sufficient to accept an agent-generated performance optimization?* The problem is not unique to my work. [auto_optimization](https://github.com/zjusharkyu/auto_optimization), a public project inspired by Karpathy's autoresearch, lets an agent optimize an order-book program, keeping any change that measures faster than the current best and passes the tests. Five of the seven changes it kept gained only 0.2–0.8% each; its benchmark script configures environment isolation, but no measurement variability is reported, so the records alone cannot confirm these small gains (Figure 1). Chen et al. [1] found that many official reference patches in published agent performance benchmarks, replayed on other machines, do not consistently meet the benchmarks' own validity criteria.
 
 ![Figure 1](docs/fig1-auto-optimization-iterations.svg)
 
@@ -63,7 +63,7 @@ The pipeline above decides one candidate. In practice the agent keeps going: onc
 
 ## 4. Evidence: A Blind Test on a Public Low-Latency Program
 
-**Setting.** The program comes from a CppCon 2026 talk on cache latency in trading code ([code](https://github.com/0xsanchit/CacheLatency)). When a tick arrives, the 64 options written on that stock are repriced, and those whose alpha clears a threshold are collected. One event touches about 140 cache lines spread over large tables, so most of the time goes to waiting for data. In the talk the author optimizes it by hand in four steps, from a median of 510 to 329 ns on his machine (−35%), without changing the computation. This makes a public program with a known expert answer. I removed every comment that hinted at the author's steps, froze everything except the per-event function, and gave the same opening authorization and the same snapshot of my skill to two agents that had not seen the answer: one line ran Claude Opus 5.5, the other DeepSeek V4.1 Flash. Both ran on the same virtual machine (Skylake-AVX512, no hardware counters, 2 MB huge pages) behind one lock, so their measurements never overlapped.
+**Setting.** The program comes from a CppCon 2026 talk on cache latency in trading code ([code](https://github.com/0xsanchit/CacheLatency)). When a tick arrives, the 64 options written on that stock are repriced, and those whose alpha clears a threshold are collected. One event touches about 140 cache lines spread over large tables, so most of the time goes to waiting for data. In the talk [12] the author optimizes it by hand in four steps, from a median of 510 to 329 ns on his machine (−35%), without changing the computation. This makes a public program with a known expert answer. I removed every comment that hinted at the author's steps, froze everything except the per-event function, and gave the same opening authorization and the same snapshot of my skill to two agents that had not seen the answer: one line ran Claude Opus 5.5, the other DeepSeek V4.1 Flash. Both ran on the same virtual machine (Skylake-AVX512, no hardware counters, 2 MB huge pages) behind one lock, so their measurements never overlapped.
 
 **Rules fixed before the first run.** Budget: 8 hours of machine time and at most 30 candidates; stop after 5 consecutive hypotheses without a landing. Correctness: after every run the hash of all tables must match the baseline's bit for bit. Screening: a candidate goes on if it looks at least 1% faster. Confirmation: 18 fresh pairs against the version landed last; the candidate lands if the 95% interval of the per-pair gain lies above zero. One extra core could be used.
 
@@ -101,9 +101,19 @@ Hidden symbol visibility for the per-record functions failed its screen. Part of
 
 **Figure 4.** The same versions and runs, p99 of per-packet callback time. Points 1 and 10 did not reproduce on this metric and stay on the chart.
 
-## 6. Contributions and Next Steps
+## 6. Related Work
 
-**Contributions.** I designed and implemented a pipeline for evaluating agent-generated optimizations in which correctness is an absolute veto and performance must be confirmed with fresh data within a pre-declared budget. There are only three outcomes—accept, reject (or send back for repair), and not confirmed within this budget—each reported with its cost. For agents that keep optimizing, I extended it into a continuous line: one authorization written in advance, each candidate confirmed against the version landed last, two floors that separate computation from waiting for data without hardware counters, a ledger on disk, and a final re-measure of all landed versions in one session from which the convergence chart is drawn. I packaged the workflow as an agent skill ([performance-optimization-skill](https://github.com/Jasper-aa64/performance-optimization-skill)). In a blind test on a public program from a CppCon 2026 talk, agents from two vendors followed it to the end; on the same machine both final versions were 22–27% faster than the expert's hand-optimized code, and the gate caught a lost-update bug in that code. On an in-house market-data callback the line landed five of six hypotheses; with the program's earlier steps the median per-packet time fell by 87.9%, and the same re-measure showed that two earlier gains did not reproduce. The statistical methods are established; my focus is how evidence should be gathered, and verdicts made, when agents generate candidates at scale.
+**LLM agents and performance.** PIE [2] trains and prompts models to make performance-improving edits to C++ programs and scores them by speedup on a simulator, so that timing noise does not enter. Repository-level benchmarks such as GSO, SWE-Perf and SWE-fficiency compare agent patches with official reference patches by measured runtime; Chen et al. [1] replayed those reference patches on four cloud machine types and found that many do not meet the benchmarks' own validity rules on every machine. SysTradeBench [3] evaluates LLM-generated trading systems through an iterative build-test-patch loop with drift-aware diagnostics. These works measure how capable agents are. My question is the step inside such a loop: when one agent patch, or a long line of them, may be accepted on a given machine within a given budget.
+
+**Measurement bias and rigor.** Mytkowicz et al. [4] showed that changes that look harmless, such as the size of the environment or the link order, can bias a measured speedup; STABILIZER [5] re-randomizes memory layout during execution so that such effects average out. Georges et al. [6] and Kalibera and Jones [7] set out statistically sound methods for repeated measurement and for deciding how many repetitions to run at each level. The pipeline takes randomized run order, fresh confirmation data and sample sizes planned in advance from this work, and applies them to candidates that agents generate in large numbers.
+
+**Noisy shared machines.** Duet benchmarking [8] runs the two versions side by side on the same cloud machine so that shared interference affects both; TUNA [9] deals with noisy measurements while tuning configurations in the cloud; FBDetect [10] catches regressions of a small fraction of a percent in production. The paired, interleaved runs here follow the idea of Duet at the level of single runs, and the open question on budgets in Section 7 is the trade-off between cost and resolution that these systems face at larger scale.
+
+**Statistics.** The confirmations use paired t-intervals and exact sign-flip (permutation) tests [11]. The contribution is not new statistics, but how evidence is gathered and verdicts are made when agents keep generating candidates.
+
+## 7. Contributions and Next Steps
+
+**Contributions.** I designed and implemented a pipeline for evaluating agent-generated optimizations in which correctness is an absolute veto and performance must be confirmed with fresh data within a pre-declared budget. There are only three outcomes—accept, reject (or send back for repair), and not confirmed within this budget—each reported with its cost. For agents that keep optimizing, I extended it into a continuous line: one authorization written in advance, each candidate confirmed against the version landed last, two floors that separate computation from waiting for data without hardware counters, a ledger on disk, and a final re-measure of all landed versions in one session from which the convergence chart is drawn. I packaged the workflow as an agent skill ([performance-optimization-skill](https://github.com/Jasper-aa64/performance-optimization-skill)). In a blind test on a public program from a CppCon 2026 talk, agents from two vendors followed it to the end; on the same machine both final versions were 22–27% faster than the expert's hand-optimized code, and the gate caught a lost-update bug in that code. On an in-house market-data callback the line landed five of six hypotheses; with the program's earlier steps the median per-packet time fell by 87.9%, and the same re-measure showed that two earlier gains did not reproduce. The statistical methods are established (Section 6); my focus is how evidence should be gathered, and verdicts made, when agents generate candidates at scale.
 
 **Open questions and next steps.**
 
@@ -114,6 +124,21 @@ Hidden symbol visibility for the per-record functions failed its screen. Part of
 - **Knowledge.** The skill's bottleneck cards matched only the first steps; the largest steps, on waiting for data and on cross-core handoff, had no card, and the agents relied on the model's own knowledge. Next: add these cards and measure whether they change what agents find.
 
 Longer term, I want to study whether feeding this evidence back to the agents improves their patches.
+
+## References
+
+1. Z. Chen, Z. Sun, Y. Shi, D. Lo, L. Jiang. Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents? [arXiv:2607.01211](https://arxiv.org/abs/2607.01211), 2026.
+2. A. Shypula, A. Madaan, Y. Zeng, U. Alon, J. Gardner, M. Hashemi, G. Neubig, P. Ranganathan, O. Bastani, A. Yazdanbakhsh. Learning Performance-Improving Code Edits. ICLR, 2024.
+3. Y. Cao, H. Zhang, J. W. Keung, Y. Chen, L. Song. SysTradeBench: An Iterative Build-Test-Patch Benchmark for Strategy-to-Code Trading Systems with Drift-Aware Diagnostics. [arXiv:2604.04812](https://arxiv.org/abs/2604.04812), 2026.
+4. T. Mytkowicz, A. Diwan, M. Hauswirth, P. F. Sweeney. Producing Wrong Data Without Doing Anything Obviously Wrong! ASPLOS, 2009.
+5. C. Curtsinger, E. D. Berger. STABILIZER: Statistically Sound Performance Evaluation. ASPLOS, 2013.
+6. A. Georges, D. Buytaert, L. Eeckhout. Statistically Rigorous Java Performance Evaluation. OOPSLA, 2007.
+7. T. Kalibera, R. E. Jones. Rigorous Benchmarking in Reasonable Time. ISMM, 2013.
+8. L. Bulej, V. Horký, P. Tůma, F. Farquet, A. Prokopec. Duet Benchmarking: Improving Measurement Accuracy in the Cloud. ICPE, 2020.
+9. J. Freischuetz, K. Kanellis, B. Kroth, S. Venkataraman. TUNA: Tuning Unstable and Noisy Cloud Applications. EuroSys, 2025.
+10. D. Y. Yoon et al. FBDetect: Catching Tiny Performance Regressions at Hyperscale through In-Production Monitoring. SOSP, 2024.
+11. P. I. Good. Permutation, Parametric, and Bootstrap Tests of Hypotheses. Springer, 2005.
+12. S. Gupta. Talk at CppCon 2026 on cache latency in a trading hot path; slides "The Latency Slippage" and code at [github.com/0xsanchit/CacheLatency](https://github.com/0xsanchit/CacheLatency).
 
 ---
 
