@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#50627a"/></marker></defs>
+<rect x="10" y="40" width="136" height="96" rx="6" fill="#f3f6fb" stroke="#9aa7b8"/>
+<text x="78.0" y="60" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044" text-anchor="middle">1  Scope &amp; contract</text>
+<text x="78.0" y="78" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">metric, workload, budget,</text>
+<text x="78.0" y="93" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">frozen scope, stop rule;</text>
+<text x="78.0" y="108" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">accept the measurement:</text>
+<text x="78.0" y="123" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">A/A + gate vs wrong builds</text>
+<rect x="160" y="40" width="136" height="96" rx="6" fill="#f3f6fb" stroke="#9aa7b8"/>
+<text x="228.0" y="60" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044" text-anchor="middle">2  Find the time</text>
+<text x="228.0" y="78" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">symptom routing,</text>
+<text x="228.0" y="93" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">wall vs CPU first;</text>
+<text x="228.0" y="108" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">perf stat / report /</text>
+<text x="228.0" y="123" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">annotate / c2c; floors</text>
+<rect x="310" y="40" width="136" height="96" rx="6" fill="#eaf1fd" stroke="#3f7be0"/>
+<text x="378.0" y="60" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044" text-anchor="middle">3  Recognize</text>
+<text x="378.0" y="78" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">signal → lookup line</text>
+<text x="378.0" y="93" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">→ read one card</text>
+<text x="378.0" y="108" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">(cause, fix, verify);</text>
+<text x="378.0" y="123" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">never fix from memory</text>
+<rect x="460" y="40" width="136" height="96" rx="6" fill="#f3f6fb" stroke="#9aa7b8"/>
+<text x="528.0" y="60" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044" text-anchor="middle">4  Patch &amp; accept</text>
+<text x="528.0" y="78" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">one hypothesis;</text>
+<text x="528.0" y="93" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">correctness veto →</text>
+<text x="528.0" y="108" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">screen → confirm on</text>
+<text x="528.0" y="123" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">fresh pairs</text>
+<rect x="610" y="40" width="136" height="96" rx="6" fill="#f3f6fb" stroke="#9aa7b8"/>
+<text x="678.0" y="60" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044" text-anchor="middle">5  Land &amp; continue</text>
+<text x="678.0" y="78" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">land as new baseline,</text>
+<text x="678.0" y="93" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">re-profile, floors,</text>
+<text x="678.0" y="108" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">rewrite ledger;</text>
+<text x="678.0" y="123" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">next hypothesis</text>
+<line x1="146" y1="88.0" x2="158" y2="88.0" stroke="#50627a" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="296" y1="88.0" x2="308" y2="88.0" stroke="#50627a" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="446" y1="88.0" x2="458" y2="88.0" stroke="#50627a" stroke-width="1.4" marker-end="url(#a)"/>
+<line x1="596" y1="88.0" x2="608" y2="88.0" stroke="#50627a" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="528.0" y="164" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#233044" text-anchor="middle">accepted</text>
+<text x="528.0" y="179" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7c8aa0" text-anchor="middle">rejected / sent back</text>
+<text x="528.0" y="194" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7c8aa0" text-anchor="middle">not confirmed in budget</text>
+<text x="528.0" y="152" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11" fill="#7c8aa0" text-anchor="middle">three outcomes:</text>
+<path d="M678.0,136 L678.0,228 L228.0,228 L228.0,140" fill="none" stroke="#3f7be0" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="453.0" y="244" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#3f7be0" text-anchor="middle">continuous line: next hypothesis on the landed version, under one opening authorization</text>
+<rect x="460" y="272" width="286" height="62" rx="6" fill="#ffffff" stroke="#9aa7b8"/>
+<text x="603.0" y="292" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044" text-anchor="middle">Stop rule fires</text>
+<text x="603.0" y="310" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">re-measure all landed versions in one session;</text>
+<text x="603.0" y="325" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a" text-anchor="middle">draw the convergence chart from those numbers</text>
+<line x1="726" y1="136" x2="726" y2="270" stroke="#50627a" stroke-width="1.4" marker-end="url(#a)" stroke-dasharray="4 3"/>
+<rect x="10" y="272" width="420" height="118" rx="6" fill="#ffffff" stroke="#3f7be0" stroke-dasharray="4 3"/>
+<text x="22" y="292" font-family="Arial, Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#233044">Knowledge by progressive disclosure (Stage 3)</text>
+<text x="22" y="314" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" font-weight="700" fill="#3f7be0">always</text>
+<text x="110" y="314" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a">one-sentence description of the skill</text>
+<text x="22" y="333" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" font-weight="700" fill="#3f7be0">on trigger</text>
+<text x="110" y="333" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a">SKILL.md: router and rules</text>
+<text x="22" y="352" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" font-weight="700" fill="#3f7be0">on a signal</text>
+<text x="110" y="352" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a">one bottleneck card from the lookup</text>
+<text x="22" y="371" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" font-weight="700" fill="#3f7be0">rarely</text>
+<text x="110" y="371" font-family="Arial, Microsoft YaHei, sans-serif" font-size="11.5" fill="#50627a">the posts a card links to</text>
+<line x1="378.0" y1="136" x2="318.0" y2="270" stroke="#3f7be0" stroke-dasharray="4 3"/>
+</svg>
